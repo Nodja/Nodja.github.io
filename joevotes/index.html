@@ -11,6 +11,11 @@
       <v-content>
         <v-container grid-list-md>
             <v-layout row wrap align-center>
+            <v-flex xs10 offset-xs1 text-xs-center>
+                <h1> Joseph Anderson's Twitch/Patreon Voting </h1>
+                Last updated: {{ last_update }} <br>
+                Updates automatically every 5 minutes or so, might break/look weird in the future.
+            </v-flex>
             <template v-for="vote in votes">
                 <v-flex xs2>
                     {{ vote[0] }} ({{ vote[1] }})
@@ -41,7 +46,8 @@
       mounted () {
         axios.get('votes.json')
             .then(response => {
-                this.votes = response.data;
+                this.votes = response.data['votes'];
+                this.last_update = response.data['last_update']
                 this.votes.sort(Comparator);
                 var votes_max = Math.floor(this.votes[0][1] + this.votes[0][1] * 0.1);
                 for (var vote of this.votes) {
@@ -54,7 +60,8 @@
       },
       data () {
         return {
-          votes: []
+          votes: [],
+          last_update: null
         }
       },      
     })
