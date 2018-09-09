@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+<body>
+  <div id="app">
+    <v-app>
+      <v-content>
+        <v-container grid-list-md>
+            <v-layout row wrap align-center>
+            <template v-for="vote in votes">
+                <v-flex xs2>
+                    {{ vote[0] }} ({{ vote[1] }})
+                </v-flex>
+                <v-flex xs10 row >
+                <v-progress-linear v-model="vote[2]" height="20" style="margin: 0px" ></v-progress-linear>
+                </v-flex>
+            </template>
+            </v-layout>
+        </v-container>
+      </v-content>
+    </v-app>
+  </div>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+  
+  <script>
+    function Comparator(a, b) {
+       if (a[1] < b[1]) return 1;
+       if (a[1] > b[1]) return -1;
+       return 0;
+     }    
+  
+    new Vue({
+      el: '#app',
+      mounted () {
+        axios.get('votes.json')
+            .then(response => {
+                this.votes = response.data;
+                this.votes.sort(Comparator);
+                var votes_max = Math.floor(this.votes[0][1] + this.votes[0][1] * 0.1);
+                for (var vote of this.votes) {
+                    var percentage = vote[1] / votes_max * 100;
+                    vote.push(percentage);
+                    console.log(vote);
+                    }
+                
+                })
+      },
+      data () {
+        return {
+          votes: []
+        }
+      },      
+    })
+  </script>
+</body>
+</html>
