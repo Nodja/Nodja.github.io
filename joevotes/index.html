@@ -1,78 +1,115 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
 </head>
 <body>
-  <div id="app">
+<div id="app">
     <v-app>
-      <v-content>
-        <v-container grid-list-md>
-            <v-layout row wrap align-center>
-            <v-flex xs10 offset-xs1 text-xs-center>
-                <h1> Joseph Anderson's Twitch/Patreon Voting </h1>
-                Updates every 5 minutes or so, doesn't refresh automatically (you need to F5). <br>
-                Might break/look weird in the future. <br><br>
-                
-                Last updated: {{ last_update }} EST <br>
-                {{ total_voters }} people have voted. <br>
-                {{ nontop_voters }} people have not voted in the top 10.
-            </v-flex>
-            <template v-for="vote in votes">
-                <v-flex xs2>
-                    {{ vote[0] }} ({{ vote[1] }})
-                </v-flex>
-                <v-flex xs10 row >
-                <v-progress-linear v-model="vote[2]" height="20" style="margin: 0px" ></v-progress-linear>
-                </v-flex>
-            </template>
-            </v-layout>
-        </v-container>
-      </v-content>
+        <v-content>
+            <v-container grid-list-md>
+                <v-layout row wrap align-center>
+                    <v-flex xs10 offset-xs1 text-xs-center>
+                        <h1>
+                            <span :style="{color: mostbeautifulcolors[0]}">U</span>
+                            <span :style="{color: mostbeautifulcolors[1]}">N</span>
+                            <span :style="{color: mostbeautifulcolors[2]}">O</span>
+                            <span :style="{color: mostbeautifulcolors[3]}">F</span>
+                            <span :style="{color: mostbeautifulcolors[4]}">I</span>
+                            <span :style="{color: mostbeautifulcolors[5]}">C</span>
+                            <span :style="{color: mostbeautifulcolors[6]}">C</span>
+                            <span :style="{color: mostbeautifulcolors[7]}">I</span>
+                            <span :style="{color: mostbeautifulcolors[8]}">A</span>
+                            <span :style="{color: mostbeautifulcolors[9]}">L</span>
+
+                            Joseph Anderson's Twitch/Patreon Voting </h1>
+                        A python script on my home computer updates this data every 5 minutes. <br>
+                        To vote you need to be a twitch subscriber/patreon and go on the #patreon-and-twitch-sub-voting
+                        channel on <a href="https://discordapp.com/invite/8gSBsYC">the discord server</a>. <br>
+                        Don't forget to link your twitch/patreon account with your discord account for access. <br>
+                        <br><br>
+
+                        Last updated: {{ last_update }} EST <br>
+                        {{ total_voters }} people have voted. <br>
+                        {{ nontop_voters }} people have not voted in the top 10.
+                    </v-flex>
+                    <template v-for="vote in votes">
+                        <v-flex xs2>
+                            {{ vote[0] }} ({{ vote[1] }})
+                        </v-flex>
+                        <v-flex xs10 row>
+                            <v-progress-linear v-model="vote[2]" height="20" style="margin: 0px"></v-progress-linear>
+                        </v-flex>
+                    </template>
+                </v-layout>
+            </v-container>
+        </v-content>
     </v-app>
-  </div>
- 
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
-  
-  <script>
-    function Comparator(a, b) {
-       if (a[1] < b[1]) return 1;
-       if (a[1] > b[1]) return -1;
-       return 0;
-     }    
-  
-    new Vue({
-      el: '#app',
-      mounted () {
-        axios.get('votes.json')
-            .then(response => {
-                this.votes = response.data['votes'];
-                this.last_update = response.data['last_update']
-                this.total_voters = response.data['total_voters']
-                this.nontop_voters = response.data['nontop_voters']
-                this.votes.sort(Comparator);
-                var votes_max = Math.floor(this.votes[0][1] + this.votes[0][1] * 0.1);
-                for (var vote of this.votes) {
-                    var percentage = vote[1] / votes_max * 100;
-                    vote.push(percentage);
-                    console.log(vote);
-                    }
-                
-                })
-      },
-      data () {
-        return {
-          votes: [],
-          last_update: null,
-          total_voters: 0,
-          nontop_voters: 0
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+
+<script>
+    function comparator(a, b) {
+        if (a[1] < b[1]) return 1;
+        if (a[1] > b[1]) return -1;
+        return 0;
+    }
+
+    function shuffleArray(array) {
+        for (var i = array.length - 1; i > 0; i--) {
+            var j = Math.floor(Math.random() * (i + 1));
+            var temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
         }
-      },      
+    }
+
+    new Vue({
+        el: '#app',
+        methods: {
+            loadVotes: function () {
+                axios.get('votes.json')
+                    .then(response => {
+                        this.votes = response.data['votes'];
+                        this.last_update = response.data['last_update'];
+                        this.total_voters = response.data['total_voters'];
+                        this.nontop_voters = response.data['nontop_voters'];
+                        this.votes.sort(comparator);
+                        var votes_max = Math.floor(this.votes[0][1] + this.votes[0][1] * 0.1);
+                        for (var vote of this.votes) {
+                            var percentage = vote[1] / votes_max * 100;
+                            vote.push(percentage);
+                        }
+
+                    })
+            }
+        },
+        mounted() {
+            this.loadVotes();
+            setInterval(function () {
+                this.loadVotes();
+            }.bind(this), 60000);
+
+            setInterval(function () {
+                shuffleArray(this.mostbeautifulcolors);
+                this.mostbeautifulcolors.splice()
+            }.bind(this), 1000);
+
+
+        },
+        data: {
+            votes: [],
+            last_update: null,
+            total_voters: 0,
+            nontop_voters: 0,
+            mostbeautifulcolors: ['red', 'yellow', 'green', 'purple', '#ffc0cb', '#00ffff', '#ff00ff', '#a52a2a', '#3dff4b', '#ffd700']
+        },
     })
-  </script>
+</script>
 </body>
 </html>
