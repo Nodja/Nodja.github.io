@@ -9,8 +9,8 @@
 <div id="app">
     <v-app style="background-image:url(flashback.png);background-repeat: no-repeat;background-attachment: fixed; text-shadow: 2px 2px #000000" dark>
         <v-content>
-            <v-container grid-list-md>
-                <v-layout row wrap align-center>
+            <v-container grid-list-md >
+                <v-layout row wrap >
                     <v-flex xs10 offset-xs1 text-xs-center>
                         <h1>
                             <span :style="{color: mostbeautifulcolors[0]}">U</span>
@@ -42,6 +42,7 @@
                         <v-flex xs10 row style="background:rgba(0,0,0,0.5)">
                             <v-progress-linear v-model="vote[2]" height="20" style="margin: 0px"></v-progress-linear>
                         </v-flex>
+                        
                     </template>
                 </v-layout>
             </v-container>
