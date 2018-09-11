@@ -37,7 +37,7 @@
                         {{ nontop_voters }} people have not voted in the top 10.
                     </v-flex>
                     <table style="background: rgba(0,0,0,0.5)">
-                        <tr v-for="vote in votes">
+                        <tr v-for="(vote, index) in votes">
                             <td style="min-width: 250px">
                                 {{ vote[0] }}
                             </td>
@@ -50,8 +50,12 @@
                                 )
                             </td>
                             <td style="width: 100%">
-                                <v-progress-linear v-model="vote[3]" height="20" style="margin: 0px"></v-progress-linear>
+                                <template v-if="index === 0">
+                                <v-progress-linear v-model="vote[3] + vote[3] * 0.1" height="20" style="margin: 0px; overflow: visible;"></v-progress-linear>
+                                </template>
+                                <v-progress-linear v-else v-model="vote[3]" height="20" style="margin: 0px; overflow: visible;"></v-progress-linear>
                             </td>
+                            <td v-if="index === 0" style="min-width:150px;z-index: 99 !important;position:relative;">ITS OFF THE CHARTS!</td>
                         </tr>
                     </table>
                 </v-layout>
@@ -92,12 +96,11 @@
                         this.nontop_voters = response.data['nontop_voters'];
                         this.compare_date = response.data['compare_date'];
                         this.votes.sort(comparator);
-                        var votes_max = Math.floor(this.votes[0][1] + this.votes[0][1] * 0.1);
+                        var votes_max = Math.floor(this.votes[0][1]);
                         for (var vote of this.votes) {
                             var percentage = vote[1] / votes_max * 100;
                             vote.push(percentage);
                         }
-                        this.votes.splice();
 
                     })
             }
