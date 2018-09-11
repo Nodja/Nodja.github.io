@@ -36,25 +36,24 @@
                         {{ total_voters }} people have voted. <br>
                         {{ nontop_voters }} people have not voted in the top 10.
                     </v-flex>
-                    <template v-for="vote in votes" style="background:rgba(0,0,0,0.5)">
-                        <v-flex xs2 style="background:rgba(0,0,0,0.5)">
-                            <v-layout justify-space-between row >
+                    <table>
+                        <tr v-for="vote in votes">
+                            <td style="min-width: 250px">
                                 {{ vote[0] }}
-                                <span style="background:rgba(0,0,0,0.5);" >
+                            </td>
+                            <td style="min-width: 80px">
                                 {{ vote[1] }} 
-                                    (
-                                    <span style="color: green" v-if="vote[2].startsWith('+')" >{{ vote[2] }}</span>
-                                    <span style="color: red" v-else-if="vote[2].startsWith('-')" >{{ vote[2] }}</span>
-                                    <span v-else >{{ vote[2] }}</span>
-                                    )
-                                </span>
-                            </v-layout>
-                        </v-flex>
-                        <v-flex xs10 style="background:rgba(0,0,0,0.5)">
-                            <v-progress-linear v-model="vote[3]" height="20" style="margin: 0px"></v-progress-linear>
-                        </v-flex>
-                        
-                    </template>
+                                (
+                                <span style="color: green" v-if="vote[2].startsWith('+')" >{{ vote[2] }}</span>
+                                <span style="color: red" v-else-if="vote[2].startsWith('-')" >{{ vote[2] }}</span>
+                                <span v-else >{{ vote[2] }}</span>
+                                )
+                            </td>
+                            <td style="width: 100%">
+                                <v-progress-linear v-model="vote[3]" height="20" style="margin: 0px"></v-progress-linear>
+                            </td>
+                        </tr>
+                    </table>
                 </v-layout>
             </v-container>
         </v-content>
