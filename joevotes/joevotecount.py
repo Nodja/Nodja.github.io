@@ -4,6 +4,8 @@ import json
 import os
 import asyncio
 
+# I know the following code is not super pretty, but it works :D
+
 async def update_votes(messages):
     votes = [] # list of lists [gamename, nr_votes]
     voters = {} # key will be voter id (user#1234), value will be list of games voted on
