@@ -36,10 +36,10 @@
                         {{ nontop_voters }} people have not voted in the top 10.
                     </v-flex>
                     <template v-for="vote in votes">
-                        <v-flex xs2>
+                        <v-flex xs2 style="background:rgba(0,0,0,0.5)">
                             {{ vote[0] }} ({{ vote[1] }})
                         </v-flex>
-                        <v-flex xs10 row>
+                        <v-flex xs10 row style="background:rgba(0,0,0,0.5)">
                             <v-progress-linear v-model="vote[2]" height="20" style="margin: 0px"></v-progress-linear>
                         </v-flex>
                     </template>
