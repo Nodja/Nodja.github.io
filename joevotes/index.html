@@ -37,17 +37,23 @@
                         {{ nontop_voters }} people have not voted in the top 10.
                     </v-flex>
                     <template v-for="vote in votes" style="background:rgba(0,0,0,0.5)">
-                        <v-flex xs2 style="background:rgba(0,0,0,0.5)">
-                            {{ vote[0] }}
+                        <v-flex xs3 style="background:rgba(0,0,0,0.5)">
+                            <v-layout row wrap >
+                                <v-flex xs9>
+                                    {{ vote[0] }}
+                                </v-flex>
+                                <v-flex xs3>
+                                    <span style="background:rgba(0,0,0,0.5);" >
+                                    {{ vote[1] }} 
+                                        (
+                                        <span style="color: green" v-if="vote[2].startsWith('+')" >{{ vote[2] }}</span>
+                                        <span style="color: red" v-else-if="vote[2].startsWith('-')" >{{ vote[2] }}</span>
+                                        <span v-else >{{ vote[2] }}</span>
+                                        )
+                                    </span>
+                                </v-flex>
+                            </v-layout>
                         </v-flex>
-                        <span style="background:rgba(0,0,0,0.5); width:80px;" >
-                        {{ vote[1] }} 
-                            (
-                            <span style="color: green" v-if="vote[2].startsWith('+')" >{{ vote[2] }}</span>
-                            <span style="color: red" v-else-if="vote[2].startsWith('-')" >{{ vote[2] }}</span>
-                            <span v-else >{{ vote[2] }}</span>
-                            )
-                        </span>
                         <v-flex xs9 style="background:rgba(0,0,0,0.5)">
                             <v-progress-linear v-model="vote[3]" height="20" style="margin: 0px"></v-progress-linear>
                         </v-flex>
