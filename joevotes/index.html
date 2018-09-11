@@ -35,7 +35,7 @@
                         {{ total_voters }} people have voted. <br>
                         {{ nontop_voters }} people have not voted in the top 10.
                     </v-flex>
-                    <template v-for="vote in votes">
+                    <template v-for="vote in votes" style="background:rgba(0,0,0,0.5)">
                         <v-flex xs2 style="background:rgba(0,0,0,0.5)">
                             {{ vote[0] }} ({{ vote[1] }})
                         </v-flex>
