@@ -21,6 +21,19 @@ async def update_votes(messages):
                         voters[str(reactor)] = [message.content, ]
                     else:
                         voters[str(reactor)].append(message.content)
+    olddata = json.load(open('oldvotes.json', 'r'))
+    oldvotes = olddata['votes']
+    for vote in votes:
+        for oldvote in oldvotes:
+            if oldvote[0] == vote[0]:
+                diff = vote[1] - oldvote[1]
+                if diff > 0:
+                    diff = f"+{diff}"
+                else:
+                    diff = f"{diff}"
+                vote.append(diff)
+    
+    olddata_date = olddata['last_update']
     
     votes = sorted(votes, key=lambda x: x[1], reverse=True)
     top10 = votes[:10]
@@ -37,6 +50,7 @@ async def update_votes(messages):
     now = datetime.datetime.now()
     vote_data = {
         "last_update": now.strftime("%Y-%m-%d %H:%M:%S"),
+        "compare_date": olddata_date,
         "total_voters": len(voters),
         "nontop_voters": len(voters) - len(top10_voters),
         "votes": votes

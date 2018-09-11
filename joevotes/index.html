@@ -32,15 +32,24 @@
                         <br><br>
 
                         Last updated: {{ last_update }} EST <br>
+                        Votes compared with votes from: {{ compare_date }} <br>
                         {{ total_voters }} people have voted. <br>
                         {{ nontop_voters }} people have not voted in the top 10.
                     </v-flex>
                     <template v-for="vote in votes" style="background:rgba(0,0,0,0.5)">
                         <v-flex xs2 style="background:rgba(0,0,0,0.5)">
-                            {{ vote[0] }} ({{ vote[1] }})
+                            {{ vote[0] }}
                         </v-flex>
-                        <v-flex xs10 row style="background:rgba(0,0,0,0.5)">
-                            <v-progress-linear v-model="vote[2]" height="20" style="margin: 0px"></v-progress-linear>
+                        <span style="background:rgba(0,0,0,0.5); width:80px;" >
+                        {{ vote[1] }} 
+                            (
+                            <span style="color: green" v-if="vote[2].startsWith('+')" >{{ vote[2] }}</span>
+                            <span style="color: red" v-else-if="vote[2].startsWith('-')" >{{ vote[2] }}</span>
+                            <span v-else >{{ vote[2] }}</span>
+                            )
+                        </span>
+                        <v-flex xs9 style="background:rgba(0,0,0,0.5)">
+                            <v-progress-linear v-model="vote[3]" height="20" style="margin: 0px"></v-progress-linear>
                         </v-flex>
                         
                     </template>
@@ -80,6 +89,7 @@
                         this.last_update = response.data['last_update'];
                         this.total_voters = response.data['total_voters'];
                         this.nontop_voters = response.data['nontop_voters'];
+                        this.compare_date = response.data['compare_date'];
                         this.votes.sort(comparator);
                         var votes_max = Math.floor(this.votes[0][1] + this.votes[0][1] * 0.1);
                         for (var vote of this.votes) {
@@ -106,6 +116,7 @@
         data: {
             votes: [],
             last_update: null,
+            compare_date: null,
             total_voters: 0,
             nontop_voters: 0,
             mostbeautifulcolors: ['red', 'yellow', 'green', 'purple', '#ffc0cb', '#00ffff', '#ff00ff', '#a52a2a', '#3dff4b', '#ffd700']
