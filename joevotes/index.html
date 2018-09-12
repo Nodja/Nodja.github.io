@@ -50,7 +50,7 @@
                                     <span v-else >{{ vote[2] }}</span>
                                     )
                                 </td>
-                                <td style="width: 100%">
+                                <td style="min-width:100px; width: 100%">
                                     <template v-if="index === 0">
                                     <v-progress-linear v-model="vote[3] + vote[3] * 0.2" height="20" style="margin: 0px; overflow: visible;"></v-progress-linear>
                                     </template>
