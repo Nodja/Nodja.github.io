@@ -36,14 +36,14 @@ async def update_votes(messages):
     olddata_date = olddata['last_update']
     
     votes = sorted(votes, key=lambda x: x[1], reverse=True)
-    top10 = votes[:10]
+    top_x = votes[:10]
     
-    top10_voters = []
+    topx_voters = []
     for voter in voters:
-        for top in top10:
+        for top in top_x:
             # print(top, voters[voter])
             if top[0] in voters[voter]:
-                top10_voters.append(voter)
+                topx_voters.append(voter)
                 break
     
     filepath = r"C:\Users\Nodja\Desktop\proj\Nodja.github.io\joevotes\votes.json"
@@ -52,7 +52,7 @@ async def update_votes(messages):
         "last_update": now.strftime("%Y-%m-%d %H:%M:%S"),
         "compare_date": olddata_date,
         "total_voters": len(voters),
-        "nontop_voters": len(voters) - len(top10_voters),
+        "nontop_voters": len(voters) - len(topx_voters),
         "votes": votes
     }
     
