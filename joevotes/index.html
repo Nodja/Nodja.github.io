@@ -7,24 +7,12 @@
 </head>
 <body>
 <div id="app">
-    <v-app style="background-image:url(flashback.png);background-repeat: no-repeat;background-attachment: fixed; text-shadow: 2px 2px #000000" dark>
+    <v-app dark>
         <v-content>
             <v-container grid-list-md >
                 <v-layout row wrap >
                     <v-flex xs10 offset-xs1 text-xs-center>
-                        <h1>
-                            <span :style="{color: mostbeautifulcolors[0]}">U</span>
-                            <span :style="{color: mostbeautifulcolors[1]}">N</span>
-                            <span :style="{color: mostbeautifulcolors[2]}">O</span>
-                            <span :style="{color: mostbeautifulcolors[3]}">F</span>
-                            <span :style="{color: mostbeautifulcolors[4]}">F</span>
-                            <span :style="{color: mostbeautifulcolors[5]}">I</span>
-                            <span :style="{color: mostbeautifulcolors[6]}">C</span>
-                            <span :style="{color: mostbeautifulcolors[7]}">I</span>
-                            <span :style="{color: mostbeautifulcolors[8]}">A</span>
-                            <span :style="{color: mostbeautifulcolors[9]}">L</span>
-
-                            Joseph Anderson's Twitch/Patreon Voting </h1>
+                        <h1>Joseph Anderson's Twitch/Patreon Voting </h1>
                         A <a href="https://github.com/Nodja/Nodja.github.io/blob/master/joevotes/joevotecount.py">python script</a> on my home computer updates this data every 5 minutes. <br>
                         To vote you need to be a twitch subscriber/patreon and go on the #patreon-and-twitch-sub-voting
                         channel on <a href="https://discordapp.com/invite/8gSBsYC">the discord server</a>. <br>
@@ -73,15 +61,6 @@
         return 0;
     }
 
-    function shuffleArray(array) {
-        for (var i = array.length - 1; i > 0; i--) {
-            var j = Math.floor(Math.random() * (i + 1));
-            var temp = array[i];
-            array[i] = array[j];
-            array[j] = temp;
-        }
-    }
-
     new Vue({
         el: '#app',
         methods: {
@@ -108,21 +87,13 @@
             setInterval(function () {
                 this.loadVotes();
             }.bind(this), 60000);
-
-            setInterval(function () {
-                shuffleArray(this.mostbeautifulcolors);
-                this.mostbeautifulcolors.splice()
-            }.bind(this), 1000);
-
-
         },
         data: {
             votes: [],
             last_update: null,
             compare_date: null,
             total_voters: 0,
-            nontop_voters: 0,
-            mostbeautifulcolors: ['red', 'yellow', 'green', 'purple', '#ffc0cb', '#00ffff', '#ff00ff', '#a52a2a', '#3dff4b', '#ffd700']
+            nontop_voters: 0
         },
     })
 </script>
