@@ -13,7 +13,9 @@ async def update_votes(messages):
     
     for message in messages:
         for reaction in message.reactions:
-            if ord(reaction.emoji) == 128077: # thumbs up
+            if type(reaction.emoji) is not str:
+                continue
+            if ord(reaction.emoji) == 128123: # spooky ghost
                 votes.append([message.content, reaction.count])
                 reactors = await reaction.users().flatten()
                 for reactor in reactors:
@@ -36,7 +38,7 @@ async def update_votes(messages):
     olddata_date = olddata['last_update']
     
     votes = sorted(votes, key=lambda x: x[1], reverse=True)
-    top_x = votes[:2]
+    top_x = votes[:10]
     
     topx_voters = []
     for voter in voters:
@@ -46,6 +48,7 @@ async def update_votes(messages):
                 topx_voters.append(voter)
                 break
     
+    votes = sorted(votes, key=lambda x: x[0].lower())
     filepath = r"C:\Users\Nodja\Desktop\proj\Nodja.github.io\joevotes\votes.json"
     now = datetime.datetime.now()
     vote_data = {
@@ -57,7 +60,7 @@ async def update_votes(messages):
     }
     
     with open(filepath, 'w') as f:
-        f.write(json.dumps(vote_data))
+        f.write(json.dumps(vote_data, indent=4, sort_keys=True))
         f.truncate()
     
     # push to github, repo preconfigured
@@ -76,7 +79,7 @@ async def fetch_votes():
     for guild in client.guilds:
         if guild.id == 308515582817468420: # JADS
             for c in guild.channels:
-                if c.id == 375432166659588099: # voting channel
+                if c.id == 492088331287527454: # voting channel
                     channel = c
     
     if channel is None:
@@ -84,14 +87,14 @@ async def fetch_votes():
     
     messages = []
     
-    dt_from = datetime.datetime(2018, 9, 8, 18, 41, 26, 689000)
-    dt_to = datetime.datetime(2018, 9, 8, 19, 0, 4)
+    dt_from = datetime.datetime(2018, 9, 22, 20, 7, 46)
+    dt_to = datetime.datetime(2018, 9, 22, 20, 19, 3)
     
     
     async for message in channel.history(after=dt_from, limit=200):
         if message.created_at >= dt_to:
             break
-        # print(message.id, message.created_at, message.content)
+        print(message.id, message.created_at, message.content)
         messages.append(message)
         
     await update_votes(messages)
@@ -101,7 +104,7 @@ async def fetch_votes():
 
 client = discord.Client() 
 client.loop.create_task(fetch_votes())
-client.run("discord token", bot=False)
+client.run("mfa.NMr2fvmxRo-ybyvs2RgNySuLDQutubHi69eRNAi1HZNAftT0B3vlmORSWV19Zc69DzNYEo0f9sMr-6YQwc3Z", bot=False)
 
 
 
