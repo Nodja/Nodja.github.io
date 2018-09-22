@@ -78,9 +78,9 @@ async def update_votes(messages):
     # push to github, repo preconfigured
     repo_dir = r"C:\Users\Nodja\Desktop\proj\Nodja.github.io"
     os.chdir(repo_dir)
-    # os.system("git add joevotes\\votes.json")
-    # os.system("git commit -m \"Update votes (automated)\"")
-    # os.system("git push origin")
+    os.system("git add joevotes\\votes.json")
+    os.system("git commit -m \"Update votes (automated)\"")
+    os.system("git push origin")
     
     
 async def fetch_votes():
