@@ -11,11 +11,20 @@ async def update_votes(messages):
     voters = {} # key will be voter id (user#1234), value will be list of games voted on
     
     
+    leon = 0
+    god_damn_weebs = 0
+    
     for message in messages:
         for reaction in message.reactions:
             if type(reaction.emoji) is not str:
                 continue
-            if ord(reaction.emoji) == 128123: # spooky ghost
+            if ord(reaction.emoji[0]) == 128123: # spooky ghost
+                if message.content == "LEON":
+                    leon = reaction.count
+                    continue
+                if message.content == "god damn weebs":
+                    god_damn_weebs = reaction.count
+                    continue
                 votes.append([message.content, reaction.count])
                 reactors = await reaction.users().flatten()
                 for reactor in reactors:
@@ -23,6 +32,7 @@ async def update_votes(messages):
                         voters[str(reactor)] = [message.content, ]
                     else:
                         voters[str(reactor)].append(message.content)
+                        
     olddata = json.load(open('oldvotes.json', 'r'))
     oldvotes = olddata['votes']
     for vote in votes:
@@ -56,6 +66,8 @@ async def update_votes(messages):
         "compare_date": olddata_date,
         "total_voters": len(voters),
         "nontop_voters": len(voters) - len(topx_voters),
+        "leon": leon,
+        "god_damn_weebs": god_damn_weebs,
         "votes": votes
     }
     
@@ -66,9 +78,9 @@ async def update_votes(messages):
     # push to github, repo preconfigured
     repo_dir = r"C:\Users\Nodja\Desktop\proj\Nodja.github.io"
     os.chdir(repo_dir)
-    os.system("git add joevotes\\votes.json")
-    os.system("git commit -m \"Update votes (automated)\"")
-    os.system("git push origin")
+    # os.system("git add joevotes\\votes.json")
+    # os.system("git commit -m \"Update votes (automated)\"")
+    # os.system("git push origin")
     
     
 async def fetch_votes():
@@ -90,12 +102,16 @@ async def fetch_votes():
     dt_from = datetime.datetime(2018, 9, 22, 20, 7, 46)
     dt_to = datetime.datetime(2018, 9, 22, 20, 19, 3)
     
-    
     async for message in channel.history(after=dt_from, limit=200):
         if message.created_at >= dt_to:
             break
         print(message.id, message.created_at, message.content)
         messages.append(message)
+        
+    dt_leon = datetime.datetime(2018, 9, 22, 20, 24, 0)
+    message = [message async for message in channel.history(after=dt_leon, limit=1)][0]
+    messages.append(message)
+        
         
     await update_votes(messages)
     now = datetime.datetime.now()

@@ -21,7 +21,9 @@
                         Last updated: {{ last_update }} EST <br>
                         Votes compared with votes from: {{ compare_date }} <br>
                         {{ total_voters }} people have voted. <br>
-                        {{ nontop_voters }} people have not voted in the top 10.
+                        {{ nontop_voters }} people have not voted in the top 10. <br>
+                        {{ god_damn_weebs }} poeple are tired of all this weeb shit (god damn weeb votes) <br>
+                        {{ leon }} out of 11037 people like to drive memes to the ground (LEON votes)
                     </v-flex>
                     <v-layout>
                         <table>
@@ -72,6 +74,8 @@
                         this.nontop_voters = response.data['nontop_voters'];
                         this.compare_date = response.data['compare_date'];
                         this.votes.sort(comparator);
+                        this.leon = response.data['leon'];
+                        this.god_damn_weebs = response.data['god_damn_weebs'];
                         var votes_max = Math.floor(this.votes[0][1]);
                         for (var vote of this.votes) {
                             var percentage = vote[1] / votes_max * 100;
@@ -92,7 +96,9 @@
             last_update: null,
             compare_date: null,
             total_voters: 0,
-            nontop_voters: 0
+            nontop_voters: 0,
+            leon: 0,
+            god_damn_weebs: 0
         },
     })
 </script>
