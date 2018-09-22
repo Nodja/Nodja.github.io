@@ -1,23 +1,23 @@
 {
     "compare_date": "2018-09-22 18:21:20",
-    "last_update": "2018-09-22 18:33:24",
-    "nontop_voters": 348,
-    "total_voters": 755,
+    "last_update": "2018-09-22 18:38:24",
+    "nontop_voters": 351,
+    "total_voters": 759,
     "votes": [
         [
             "Alan Wake",
-            84,
-            "+84"
+            85,
+            "+85"
         ],
         [
             "Alien Isolation",
-            184,
-            "+184"
+            186,
+            "+186"
         ],
         [
             "Amnesia - Machine for Pigs",
-            35,
-            "+35"
+            36,
+            "+36"
         ],
         [
             "Anatomy (Kitty Horror Show)",
@@ -51,8 +51,8 @@
         ],
         [
             "Cry of Fear",
-            29,
-            "+29"
+            30,
+            "+30"
         ],
         [
             "Crying Is Not Enough",
@@ -76,13 +76,13 @@
         ],
         [
             "Dead Space 1",
-            195,
-            "+195"
+            197,
+            "+197"
         ],
         [
             "Dead Space 2",
-            63,
-            "+63"
+            64,
+            "+64"
         ],
         [
             "Deadbolt",
@@ -91,8 +91,8 @@
         ],
         [
             "Deadly Premonition",
-            67,
-            "+67"
+            68,
+            "+68"
         ],
         [
             "Detention",
@@ -116,13 +116,13 @@
         ],
         [
             "FEAR",
-            71,
-            "+71"
+            72,
+            "+72"
         ],
         [
             "Five Nights at Freddies",
-            73,
-            "+73"
+            74,
+            "+74"
         ],
         [
             "Flipping Death",
@@ -136,8 +136,8 @@
         ],
         [
             "god damn weebs",
-            306,
-            "+306"
+            307,
+            "+307"
         ],
         [
             "Grabbed By The Ghoulies",
@@ -181,8 +181,8 @@
         ],
         [
             "Luigi's Mansion",
-            192,
-            "+192"
+            193,
+            "+193"
         ],
         [
             "Mad Father",
@@ -191,8 +191,8 @@
         ],
         [
             "Metro 2033",
-            155,
-            "+155"
+            156,
+            "+156"
         ],
         [
             "Monstrum",
@@ -201,8 +201,8 @@
         ],
         [
             "Night in the Woods",
-            157,
-            "+157"
+            158,
+            "+158"
         ],
         [
             "Organ Trail",
@@ -211,8 +211,8 @@
         ],
         [
             "Outlast",
-            66,
-            "+66"
+            67,
+            "+67"
         ],
         [
             "Oxenfree",
@@ -226,8 +226,8 @@
         ],
         [
             "Penumbra",
-            34,
-            "+34"
+            35,
+            "+35"
         ],
         [
             "Phantasmagoria 2",
@@ -241,18 +241,18 @@
         ],
         [
             "Pony Island",
-            102,
-            "+102"
-        ],
-        [
-            "Resident Evil 4",
             103,
             "+103"
         ],
         [
+            "Resident Evil 4",
+            104,
+            "+104"
+        ],
+        [
             "Resident Evil Remake",
-            60,
-            "+60"
+            61,
+            "+61"
         ],
         [
             "Sanitarium",
@@ -261,18 +261,18 @@
         ],
         [
             "SCP \u2013 Containment Breach",
-            167,
-            "+167"
+            168,
+            "+168"
         ],
         [
             "SCP-087-B",
-            37,
-            "+37"
+            38,
+            "+38"
         ],
         [
             "Silent Hill 1 + 2",
-            255,
-            "+255"
+            257,
+            "+257"
         ],
         [
             "Siren",
@@ -331,8 +331,8 @@
         ],
         [
             "Until Dawn",
-            275,
-            "+275"
+            276,
+            "+276"
         ],
         [
             "Your Mom",
@@ -341,8 +341,8 @@
         ],
         [
             "Yume Nikki",
-            142,
-            "+142"
+            143,
+            "+143"
         ]
     ]
 }
