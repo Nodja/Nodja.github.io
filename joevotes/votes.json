@@ -1,11 +1,11 @@
 {
     "compare_date": "2018-09-22 18:21:20",
-    "last_update": "2018-09-23 17:15:23",
+    "last_update": "2018-09-23 17:20:22",
     "nontop_voters": 493,
     "specials": {
-        "LEON": 340,
+        "LEON": 341,
         "Your Mom": 211,
-        "god damn weebs": 421
+        "god damn weebs": 422
     },
     "total_voters": 944,
     "votes": [
@@ -16,8 +16,8 @@
         ],
         [
             "Alien Isolation",
-            273,
-            "+273"
+            274,
+            "+274"
         ],
         [
             "Amnesia - Machine for Pigs",
