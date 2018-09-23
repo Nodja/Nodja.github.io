@@ -1,28 +1,28 @@
 {
     "compare_date": "2018-09-22 18:21:20",
-    "last_update": "2018-09-23 17:20:22",
-    "nontop_voters": 493,
+    "last_update": "2018-09-23 17:25:22",
+    "nontop_voters": 495,
     "specials": {
         "LEON": 341,
-        "Your Mom": 211,
-        "god damn weebs": 422
+        "Your Mom": 212,
+        "god damn weebs": 424
     },
-    "total_voters": 944,
+    "total_voters": 946,
     "votes": [
         [
             "Alan Wake",
-            108,
-            "+108"
+            109,
+            "+109"
         ],
         [
             "Alien Isolation",
-            274,
-            "+274"
+            276,
+            "+276"
         ],
         [
             "Amnesia - Machine for Pigs",
-            43,
-            "+43"
+            44,
+            "+44"
         ],
         [
             "Anatomy (Kitty Horror Show)",
@@ -36,8 +36,8 @@
         ],
         [
             "Claire: Extended Cut",
-            12,
-            "+12"
+            13,
+            "+13"
         ],
         [
             "Conarium",
@@ -51,13 +51,13 @@
         ],
         [
             "Corpse Party",
-            261,
-            "+261"
+            262,
+            "+262"
         ],
         [
             "Cry of Fear",
-            35,
-            "+35"
+            36,
+            "+36"
         ],
         [
             "Crying Is Not Enough",
@@ -81,13 +81,13 @@
         ],
         [
             "Dead Space 1",
-            256,
-            "+256"
+            258,
+            "+258"
         ],
         [
             "Dead Space 2",
-            88,
-            "+88"
+            89,
+            "+89"
         ],
         [
             "Deadbolt",
@@ -96,8 +96,8 @@
         ],
         [
             "Deadly Premonition",
-            101,
-            "+101"
+            102,
+            "+102"
         ],
         [
             "Detention",
@@ -106,8 +106,8 @@
         ],
         [
             "Distrust",
-            5,
-            "+5"
+            6,
+            "+6"
         ],
         [
             "Doorways: All Chapters",
@@ -116,13 +116,13 @@
         ],
         [
             "Eternal Darkness",
-            60,
-            "+60"
+            61,
+            "+61"
         ],
         [
             "FEAR",
-            96,
-            "+96"
+            97,
+            "+97"
         ],
         [
             "Five Nights at Freddies",
@@ -146,13 +146,13 @@
         ],
         [
             "Grim Fandango",
-            156,
-            "+156"
+            158,
+            "+158"
         ],
         [
             "I Have No Mouth And I Must Scream",
-            330,
-            "+330"
+            331,
+            "+331"
         ],
         [
             "Knock-Knock",
@@ -166,8 +166,8 @@
         ],
         [
             "Layers of Fear",
-            51,
-            "+51"
+            52,
+            "+52"
         ],
         [
             "Lobotomy Corporation",
@@ -181,8 +181,8 @@
         ],
         [
             "Luigi's Mansion",
-            286,
-            "+286"
+            287,
+            "+287"
         ],
         [
             "Mad Father",
@@ -201,8 +201,8 @@
         ],
         [
             "Night in the Woods",
-            234,
-            "+234"
+            235,
+            "+235"
         ],
         [
             "Organ Trail",
@@ -211,8 +211,8 @@
         ],
         [
             "Outlast",
-            84,
-            "+84"
+            85,
+            "+85"
         ],
         [
             "Oxenfree",
@@ -226,8 +226,8 @@
         ],
         [
             "Penumbra",
-            48,
-            "+48"
+            50,
+            "+50"
         ],
         [
             "Phantasmagoria 2",
@@ -246,13 +246,13 @@
         ],
         [
             "Resident Evil 4",
-            137,
-            "+137"
+            138,
+            "+138"
         ],
         [
             "Resident Evil Remake",
-            77,
-            "+77"
+            78,
+            "+78"
         ],
         [
             "Sanitarium",
@@ -261,8 +261,8 @@
         ],
         [
             "SCP \u2013 Containment Breach",
-            207,
-            "+207"
+            208,
+            "+208"
         ],
         [
             "SCP-087-B",
@@ -271,8 +271,8 @@
         ],
         [
             "Silent Hill 1 + 2",
-            388,
-            "+388"
+            389,
+            "+389"
         ],
         [
             "Siren",
@@ -286,8 +286,8 @@
         ],
         [
             "Spooky's Jump Scare Mansion",
-            97,
-            "+97"
+            98,
+            "+98"
         ],
         [
             "Stories Untold",
@@ -331,13 +331,13 @@
         ],
         [
             "Until Dawn",
-            398,
-            "+398"
+            400,
+            "+400"
         ],
         [
             "Yume Nikki",
-            191,
-            "+191"
+            192,
+            "+192"
         ]
     ]
 }
