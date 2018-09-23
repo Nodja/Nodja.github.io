@@ -11,19 +11,19 @@ async def update_votes(messages):
     voters = {} # key will be voter id (user#1234), value will be list of games voted on
     
     
+    specials_list = ["LEON", "god damn weebs", "Your Mom"]
+    specials = {}
     leon = 0
     god_damn_weebs = 0
+    your_mom = 0
     
     for message in messages:
         for reaction in message.reactions:
             if type(reaction.emoji) is not str:
                 continue
             if ord(reaction.emoji[0]) == 128123: # spooky ghost
-                if message.content == "LEON":
-                    leon = reaction.count
-                    continue
-                if message.content == "god damn weebs":
-                    god_damn_weebs = reaction.count
+                if message.content in specials_list:
+                    specials[message.content] = reaction.count
                     continue
                 votes.append([message.content, reaction.count])
                 reactors = await reaction.users().flatten()
@@ -66,8 +66,7 @@ async def update_votes(messages):
         "compare_date": olddata_date,
         "total_voters": len(voters),
         "nontop_voters": len(voters) - len(topx_voters),
-        "leon": leon,
-        "god_damn_weebs": god_damn_weebs,
+        "specials": specials,
         "votes": votes
     }
     
