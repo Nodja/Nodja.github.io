@@ -1,18 +1,18 @@
 {
     "compare_date": "2018-09-22 18:21:20",
-    "last_update": "2018-09-23 19:35:22",
-    "nontop_voters": 499,
+    "last_update": "2018-09-23 19:40:23",
+    "nontop_voters": 500,
     "specials": {
         "LEON": 346,
         "Your Mom": 214,
-        "god damn weebs": 426
+        "god damn weebs": 427
     },
-    "total_voters": 953,
+    "total_voters": 954,
     "votes": [
         [
             "Alan Wake",
-            109,
-            "+109"
+            110,
+            "+110"
         ],
         [
             "Alien Isolation",
@@ -31,8 +31,8 @@
         ],
         [
             "Call of Cthulhu: Dark Corners of the Earth",
-            87,
-            "+87"
+            88,
+            "+88"
         ],
         [
             "Claire: Extended Cut",
@@ -51,8 +51,8 @@
         ],
         [
             "Corpse Party",
-            264,
-            "+264"
+            263,
+            "+263"
         ],
         [
             "Cry of Fear",
@@ -71,8 +71,8 @@
         ],
         [
             "Darkwood",
-            77,
-            "+77"
+            78,
+            "+78"
         ],
         [
             "Dead Rising 2: Off The Record",
@@ -166,8 +166,8 @@
         ],
         [
             "Layers of Fear",
-            54,
-            "+54"
+            53,
+            "+53"
         ],
         [
             "Lobotomy Corporation",
@@ -196,8 +196,8 @@
         ],
         [
             "Monstrum",
-            11,
-            "+11"
+            10,
+            "+10"
         ],
         [
             "Night in the Woods",
@@ -241,8 +241,8 @@
         ],
         [
             "Pony Island",
-            159,
-            "+159"
+            160,
+            "+160"
         ],
         [
             "Resident Evil 4",
@@ -336,8 +336,8 @@
         ],
         [
             "Yume Nikki",
-            194,
-            "+194"
+            193,
+            "+193"
         ]
     ]
 }
