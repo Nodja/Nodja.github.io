@@ -1,13 +1,13 @@
 {
     "compare_date": "2018-09-22 18:21:20",
-    "last_update": "2018-09-23 14:30:28",
-    "nontop_voters": 482,
+    "last_update": "2018-09-23 14:35:24",
+    "nontop_voters": 481,
     "specials": {
         "LEON": 336,
         "Your Mom": 208,
         "god damn weebs": 419
     },
-    "total_voters": 932,
+    "total_voters": 931,
     "votes": [
         [
             "Alan Wake",
@@ -151,8 +151,8 @@
         ],
         [
             "I Have No Mouth And I Must Scream",
-            322,
-            "+322"
+            323,
+            "+323"
         ],
         [
             "Knock-Knock",
@@ -216,8 +216,8 @@
         ],
         [
             "Oxenfree",
-            186,
-            "+186"
+            185,
+            "+185"
         ],
         [
             "Paratopic",
@@ -336,8 +336,8 @@
         ],
         [
             "Yume Nikki",
-            189,
-            "+189"
+            190,
+            "+190"
         ]
     ]
 }
