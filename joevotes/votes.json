@@ -1,12 +1,11 @@
 {
     "compare_date": "2018-09-22 18:21:20",
-    "last_update": "2018-09-23 19:45:21",
-    "nontop_voters": 477,
+    "last_update": "2018-09-23 19:50:20",
+    "nontop_voters": 430,
     "specials": {
-        "LEON": 346,
-        "Your Mom": 215
+        "LEON": 346
     },
-    "total_voters": 931,
+    "total_voters": 884,
     "votes": [
         [
             "Alan Wake",
@@ -79,24 +78,9 @@
             "+332"
         ],
         [
-            "Lamia's Game Room",
-            11,
-            "+11"
-        ],
-        [
             "Layers of Fear",
             53,
             "+53"
-        ],
-        [
-            "Lobotomy Corporation",
-            23,
-            "+23"
-        ],
-        [
-            "Lone Survivor",
-            36,
-            "+36"
         ],
         [
             "Luigi's Mansion",
@@ -104,29 +88,14 @@
             "+295"
         ],
         [
-            "Mad Father",
-            44,
-            "+44"
-        ],
-        [
             "Metro 2033",
             218,
             "+218"
         ],
         [
-            "Monstrum",
-            10,
-            "+10"
-        ],
-        [
             "Night in the Woods",
             238,
             "+238"
-        ],
-        [
-            "Organ Trail",
-            36,
-            "+36"
         ],
         [
             "Outlast",
@@ -137,26 +106,6 @@
             "Oxenfree",
             190,
             "+190"
-        ],
-        [
-            "Paratopic",
-            10,
-            "+10"
-        ],
-        [
-            "Penumbra",
-            50,
-            "+50"
-        ],
-        [
-            "Phantasmagoria 2",
-            39,
-            "+39"
-        ],
-        [
-            "Pocket Mirror",
-            9,
-            "+9"
         ],
         [
             "Pony Island",
@@ -174,19 +123,9 @@
             "+78"
         ],
         [
-            "Sanitarium",
-            18,
-            "+18"
-        ],
-        [
             "SCP \u2013 Containment Breach",
             211,
             "+211"
-        ],
-        [
-            "SCP-087-B",
-            50,
-            "+50"
         ],
         [
             "Silent Hill 1 + 2",
@@ -194,24 +133,9 @@
             "+392"
         ],
         [
-            "Siren",
-            22,
-            "+22"
-        ],
-        [
-            "Siren Blood Curse",
-            26,
-            "+26"
-        ],
-        [
             "Spooky's Jump Scare Mansion",
             99,
             "+99"
-        ],
-        [
-            "Stories Untold",
-            33,
-            "+33"
         ],
         [
             "Super Castlevania IV",
@@ -224,29 +148,9 @@
             "+87"
         ],
         [
-            "The Letter",
-            13,
-            "+13"
-        ],
-        [
             "The Witch's House",
             52,
             "+52"
-        ],
-        [
-            "The Works of Mercy",
-            5,
-            "+5"
-        ],
-        [
-            "They Bleed Pixels",
-            23,
-            "+23"
-        ],
-        [
-            "They Hunger",
-            16,
-            "+16"
         ],
         [
             "Until Dawn",
