@@ -1,13 +1,12 @@
 {
     "compare_date": "2018-09-22 18:21:20",
-    "last_update": "2018-09-23 19:40:23",
-    "nontop_voters": 500,
+    "last_update": "2018-09-23 19:45:21",
+    "nontop_voters": 477,
     "specials": {
         "LEON": 346,
-        "Your Mom": 214,
-        "god damn weebs": 427
+        "Your Mom": 215
     },
-    "total_voters": 954,
+    "total_voters": 931,
     "votes": [
         [
             "Alan Wake",
@@ -20,34 +19,9 @@
             "+280"
         ],
         [
-            "Amnesia - Machine for Pigs",
-            44,
-            "+44"
-        ],
-        [
-            "Anatomy (Kitty Horror Show)",
-            30,
-            "+30"
-        ],
-        [
             "Call of Cthulhu: Dark Corners of the Earth",
             88,
             "+88"
-        ],
-        [
-            "Claire: Extended Cut",
-            13,
-            "+13"
-        ],
-        [
-            "Conarium",
-            9,
-            "+9"
-        ],
-        [
-            "Condemned: Criminal Origins",
-            50,
-            "+50"
         ],
         [
             "Corpse Party",
@@ -55,29 +29,9 @@
             "+263"
         ],
         [
-            "Cry of Fear",
-            36,
-            "+36"
-        ],
-        [
-            "Crying Is Not Enough",
-            16,
-            "+16"
-        ],
-        [
-            "Dark Echo",
-            7,
-            "+7"
-        ],
-        [
             "Darkwood",
             78,
             "+78"
-        ],
-        [
-            "Dead Rising 2: Off The Record",
-            44,
-            "+44"
         ],
         [
             "Dead Space 1",
@@ -90,29 +44,9 @@
             "+89"
         ],
         [
-            "Deadbolt",
-            36,
-            "+36"
-        ],
-        [
             "Deadly Premonition",
             102,
             "+102"
-        ],
-        [
-            "Detention",
-            49,
-            "+49"
-        ],
-        [
-            "Distrust",
-            6,
-            "+6"
-        ],
-        [
-            "Doorways: All Chapters",
-            6,
-            "+6"
         ],
         [
             "Eternal Darkness",
@@ -130,19 +64,9 @@
             "+95"
         ],
         [
-            "Flipping Death",
-            10,
-            "+10"
-        ],
-        [
             "Ghost Trick",
             164,
             "+164"
-        ],
-        [
-            "Grabbed By The Ghoulies",
-            19,
-            "+19"
         ],
         [
             "Grim Fandango",
@@ -153,11 +77,6 @@
             "I Have No Mouth And I Must Scream",
             332,
             "+332"
-        ],
-        [
-            "Knock-Knock",
-            15,
-            "+15"
         ],
         [
             "Lamia's Game Room",
@@ -201,8 +120,8 @@
         ],
         [
             "Night in the Woods",
-            237,
-            "+237"
+            238,
+            "+238"
         ],
         [
             "Organ Trail",
