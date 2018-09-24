@@ -1,9 +1,9 @@
 {
     "compare_date": "2018-09-23 19:40:23",
-    "last_update": "2018-09-24 00:31:34",
+    "last_update": "2018-09-24 00:36:35",
     "nontop_voters": 436,
     "specials": {
-        "LEON": 349
+        "LEON": 350
     },
     "total_voters": 889,
     "votes": [
@@ -119,13 +119,13 @@
         ],
         [
             "Resident Evil Remake",
-            79,
-            "+1"
+            78,
+            "0"
         ],
         [
             "SCP \u2013 Containment Breach",
-            214,
-            "+3"
+            215,
+            "+4"
         ],
         [
             "Silent Hill 1 + 2",
