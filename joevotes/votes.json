@@ -1,11 +1,11 @@
 {
     "compare_date": "2018-09-23 19:40:23",
-    "last_update": "2018-09-24 15:16:54",
-    "nontop_voters": 445,
+    "last_update": "2018-09-24 15:21:54",
+    "nontop_voters": 446,
     "specials": {
         "LEON": 353
     },
-    "total_voters": 898,
+    "total_voters": 899,
     "votes": [
         [
             "Alan Wake",
@@ -34,8 +34,8 @@
         ],
         [
             "Dead Space 1",
-            276,
-            "+15"
+            277,
+            "+16"
         ],
         [
             "Dead Space 2",
@@ -124,8 +124,8 @@
         ],
         [
             "SCP \u2013 Containment Breach",
-            215,
-            "+4"
+            216,
+            "+5"
         ],
         [
             "Silent Hill 1 + 2",
