@@ -119,7 +119,7 @@ async def fetch_votes():
 
 client = discord.Client() 
 client.loop.create_task(fetch_votes())
-client.run("mfa.NMr2fvmxRo-ybyvs2RgNySuLDQutubHi69eRNAi1HZNAftT0B3vlmORSWV19Zc69DzNYEo0f9sMr-6YQwc3Z", bot=False)
+client.run("discord token", bot=False) # gitignore
 
 
 
