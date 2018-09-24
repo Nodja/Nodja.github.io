@@ -1,11 +1,11 @@
 {
     "compare_date": "2018-09-23 19:40:23",
-    "last_update": "2018-09-24 00:46:35",
-    "nontop_voters": 436,
+    "last_update": "2018-09-24 00:51:35",
+    "nontop_voters": 437,
     "specials": {
         "LEON": 350
     },
-    "total_voters": 889,
+    "total_voters": 890,
     "votes": [
         [
             "Alan Wake",
@@ -19,8 +19,8 @@
         ],
         [
             "Call of Cthulhu: Dark Corners of the Earth",
-            89,
-            "+1"
+            90,
+            "+2"
         ],
         [
             "Corpse Party",
@@ -44,8 +44,8 @@
         ],
         [
             "Deadly Premonition",
-            102,
-            "0"
+            103,
+            "+1"
         ],
         [
             "Eternal Darkness",
@@ -134,8 +134,8 @@
         ],
         [
             "Spooky's Jump Scare Mansion",
-            101,
-            "+2"
+            102,
+            "+3"
         ],
         [
             "Super Castlevania IV",
