@@ -13,9 +13,6 @@ async def update_votes(messages):
     
     specials_list = ["LEON", "god damn weebs", "Your Mom"]
     specials = {}
-    leon = 0
-    god_damn_weebs = 0
-    your_mom = 0
     
     for message in messages:
         for reaction in message.reactions:
