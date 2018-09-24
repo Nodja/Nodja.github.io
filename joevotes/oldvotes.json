@@ -1,280 +1,343 @@
 {
-    "compare_date": "2018-09-14 18:37:35",
-    "last_update": "2018-09-22 18:21:20",
-    "nontop_voters": 343,
-    "total_voters": 745,
+    "compare_date": "2018-09-22 18:21:20",
+    "last_update": "2018-09-23 19:40:23",
+    "nontop_voters": 500,
+    "specials": {
+        "LEON": 346,
+        "Your Mom": 214,
+        "god damn weebs": 427
+    },
+    "total_voters": 954,
     "votes": [
         [
             "Alan Wake",
-            0
+            110,
+            "+110"
         ],
         [
             "Alien Isolation",
-            0
+            280,
+            "+280"
         ],
         [
             "Amnesia - Machine for Pigs",
-            0
+            44,
+            "+44"
         ],
         [
             "Anatomy (Kitty Horror Show)",
-            0
+            30,
+            "+30"
         ],
         [
             "Call of Cthulhu: Dark Corners of the Earth",
-            0
+            88,
+            "+88"
         ],
         [
             "Claire: Extended Cut",
-            0
+            13,
+            "+13"
         ],
         [
             "Conarium",
-            0
+            9,
+            "+9"
         ],
         [
             "Condemned: Criminal Origins",
-            0
+            50,
+            "+50"
         ],
         [
             "Corpse Party",
-            0
+            263,
+            "+263"
         ],
         [
             "Cry of Fear",
-            0
+            36,
+            "+36"
         ],
         [
             "Crying Is Not Enough",
-            0
+            16,
+            "+16"
         ],
         [
             "Dark Echo",
-            0
+            7,
+            "+7"
         ],
         [
             "Darkwood",
-            0
+            78,
+            "+78"
         ],
         [
             "Dead Rising 2: Off The Record",
-            0
+            44,
+            "+44"
         ],
         [
             "Dead Space 1",
-            0
+            261,
+            "+261"
         ],
         [
             "Dead Space 2",
-            0
+            89,
+            "+89"
         ],
         [
             "Deadbolt",
-            0
+            36,
+            "+36"
         ],
         [
             "Deadly Premonition",
-            0
+            102,
+            "+102"
         ],
         [
             "Detention",
-            0
+            49,
+            "+49"
         ],
         [
             "Distrust",
-            0
+            6,
+            "+6"
         ],
         [
             "Doorways: All Chapters",
-            0
+            6,
+            "+6"
         ],
         [
             "Eternal Darkness",
-            0
+            61,
+            "+61"
         ],
         [
             "FEAR",
-            0
+            98,
+            "+98"
         ],
         [
             "Five Nights at Freddies",
-            0
+            95,
+            "+95"
         ],
         [
             "Flipping Death",
-            0
+            10,
+            "+10"
         ],
         [
             "Ghost Trick",
-            0
-        ],
-        [
-            "god damn weebs",
-            0
+            164,
+            "+164"
         ],
         [
             "Grabbed By The Ghoulies",
-            0
+            19,
+            "+19"
         ],
         [
             "Grim Fandango",
-            0
+            160,
+            "+160"
         ],
         [
             "I Have No Mouth And I Must Scream",
-            0
+            332,
+            "+332"
         ],
         [
             "Knock-Knock",
-            0
+            15,
+            "+15"
         ],
         [
             "Lamia's Game Room",
-            0
+            11,
+            "+11"
         ],
         [
             "Layers of Fear",
-            0
+            53,
+            "+53"
         ],
         [
             "Lobotomy Corporation",
-            0
+            23,
+            "+23"
         ],
         [
             "Lone Survivor",
-            0
+            36,
+            "+36"
         ],
         [
             "Luigi's Mansion",
-            0
+            295,
+            "+295"
         ],
         [
             "Mad Father",
-            0
+            44,
+            "+44"
         ],
         [
             "Metro 2033",
-            0
+            218,
+            "+218"
         ],
         [
             "Monstrum",
-            0
+            10,
+            "+10"
         ],
         [
             "Night in the Woods",
-            0
+            237,
+            "+237"
         ],
         [
             "Organ Trail",
-            0
+            36,
+            "+36"
         ],
         [
             "Outlast",
-            0
+            85,
+            "+85"
         ],
         [
             "Oxenfree",
-            0
+            190,
+            "+190"
         ],
         [
             "Paratopic",
-            0
+            10,
+            "+10"
         ],
         [
             "Penumbra",
-            0
+            50,
+            "+50"
         ],
         [
             "Phantasmagoria 2",
-            0
+            39,
+            "+39"
         ],
         [
             "Pocket Mirror",
-            0
+            9,
+            "+9"
         ],
         [
             "Pony Island",
-            0
+            160,
+            "+160"
         ],
         [
             "Resident Evil 4",
-            0
+            139,
+            "+139"
         ],
         [
             "Resident Evil Remake",
-            0
+            78,
+            "+78"
         ],
         [
             "Sanitarium",
-            0
+            18,
+            "+18"
         ],
         [
             "SCP \u2013 Containment Breach",
-            0
+            211,
+            "+211"
         ],
         [
             "SCP-087-B",
-            0
+            50,
+            "+50"
         ],
         [
             "Silent Hill 1 + 2",
-            0
+            392,
+            "+392"
         ],
         [
             "Siren",
-            0
+            22,
+            "+22"
         ],
         [
             "Siren Blood Curse",
-            0
+            26,
+            "+26"
         ],
         [
             "Spooky's Jump Scare Mansion",
-            0
+            99,
+            "+99"
         ],
         [
             "Stories Untold",
-            0
+            33,
+            "+33"
         ],
         [
             "Super Castlevania IV",
-            0
+            71,
+            "+71"
         ],
         [
             "The Cat Lady",
-            0
+            87,
+            "+87"
         ],
         [
             "The Letter",
-            0
+            13,
+            "+13"
         ],
         [
             "The Witch's House",
-            0
+            52,
+            "+52"
         ],
         [
             "The Works of Mercy",
-            0
+            5,
+            "+5"
         ],
         [
             "They Bleed Pixels",
-            0
+            23,
+            "+23"
         ],
         [
             "They Hunger",
-            0
+            16,
+            "+16"
         ],
         [
             "Until Dawn",
-            0
-        ],
-        [
-            "Your Mom",
-            0
+            406,
+            "+406"
         ],
         [
             "Yume Nikki",
-            0
+            193,
+            "+193"
         ]
     ]
 }

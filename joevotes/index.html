@@ -22,9 +22,9 @@
                         Votes compared with votes from: {{ compare_date }} <br><br>
                         {{ total_voters }} people have voted. <br>
                         {{ nontop_voters }} people have not voted in the top 10. <br><br>
-                        {{ specials['god damn weebs'] }} poeple are tired of all this weeb shit (god damn weebs votes) <br>
-                        {{ specials['LEON'] }} out of 11037 people like to drive memes to the ground (LEON votes) <br>
-                        Your momma so fat {{ specials['Your Mom'] }} people ran out of gas trying to go around her (Your Mom votes)
+                        <template v-if="specials['LEON']">
+                            {{ specials['LEON'] }} out of 11037 people like to drive memes to the ground (LEON votes) <br>
+                        </template>
                     </v-flex>
                     <v-layout>
                         <table>
