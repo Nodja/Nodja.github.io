@@ -1,11 +1,11 @@
 {
     "compare_date": "2018-09-23 19:40:23",
-    "last_update": "2018-09-24 15:21:54",
-    "nontop_voters": 446,
+    "last_update": "2018-09-24 15:26:57",
+    "nontop_voters": 444,
     "specials": {
         "LEON": 353
     },
-    "total_voters": 899,
+    "total_voters": 897,
     "votes": [
         [
             "Alan Wake",
@@ -24,8 +24,8 @@
         ],
         [
             "Corpse Party",
-            273,
-            "+10"
+            274,
+            "+11"
         ],
         [
             "Darkwood",
@@ -54,8 +54,8 @@
         ],
         [
             "FEAR",
-            101,
-            "+3"
+            102,
+            "+4"
         ],
         [
             "Five Nights at Freddies",
@@ -64,13 +64,13 @@
         ],
         [
             "Ghost Trick",
-            169,
-            "+5"
+            170,
+            "+6"
         ],
         [
             "Grim Fandango",
-            165,
-            "+5"
+            166,
+            "+6"
         ],
         [
             "I Have No Mouth And I Must Scream",
@@ -109,8 +109,8 @@
         ],
         [
             "Pony Island",
-            166,
-            "+6"
+            167,
+            "+7"
         ],
         [
             "Resident Evil 4",
@@ -134,8 +134,8 @@
         ],
         [
             "Spooky's Jump Scare Mansion",
-            104,
-            "+5"
+            105,
+            "+6"
         ],
         [
             "Super Castlevania IV",
@@ -159,8 +159,8 @@
         ],
         [
             "Yume Nikki",
-            200,
-            "+7"
+            201,
+            "+8"
         ]
     ]
 }
