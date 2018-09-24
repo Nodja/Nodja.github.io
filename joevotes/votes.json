@@ -1,11 +1,11 @@
 {
     "compare_date": "2018-09-22 18:21:20",
-    "last_update": "2018-09-23 22:20:25",
-    "nontop_voters": 432,
+    "last_update": "2018-09-23 22:25:23",
+    "nontop_voters": 433,
     "specials": {
         "LEON": 347
     },
-    "total_voters": 884,
+    "total_voters": 885,
     "votes": [
         [
             "Alan Wake",
@@ -89,8 +89,8 @@
         ],
         [
             "Metro 2033",
-            219,
-            "+219"
+            220,
+            "+220"
         ],
         [
             "Night in the Woods",
