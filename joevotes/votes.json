@@ -1,11 +1,11 @@
 {
     "compare_date": "2018-09-24 22:37:01",
-    "last_update": "2018-09-25 18:11:56",
-    "nontop_voters": 238,
+    "last_update": "2018-09-25 18:16:56",
+    "nontop_voters": 237,
     "specials": {
-        "LEON": 364
+        "LEON": 365
     },
-    "total_voters": 671,
+    "total_voters": 670,
     "votes": [
         [
             "Alan Wake",
@@ -19,8 +19,8 @@
         ],
         [
             "Corpse Party",
-            322,
-            "+46"
+            323,
+            "+47"
         ],
         [
             "Dead Space 1",
@@ -84,13 +84,13 @@
         ],
         [
             "SCP \u2013 Containment Breach",
-            238,
-            "+19"
+            239,
+            "+20"
         ],
         [
             "Silent Hill 1 + 2",
-            483,
-            "+67"
+            484,
+            "+68"
         ],
         [
             "Spooky's Jump Scare Mansion",
@@ -104,8 +104,8 @@
         ],
         [
             "Yume Nikki",
-            237,
-            "+36"
+            238,
+            "+37"
         ]
     ]
 }
