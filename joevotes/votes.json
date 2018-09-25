@@ -1,16 +1,16 @@
 {
     "compare_date": "2018-09-24 22:37:01",
-    "last_update": "2018-09-25 12:17:16",
-    "nontop_voters": 245,
+    "last_update": "2018-09-25 12:22:17",
+    "nontop_voters": 246,
     "specials": {
         "LEON": 364
     },
-    "total_voters": 677,
+    "total_voters": 678,
     "votes": [
         [
             "Alan Wake",
-            142,
-            "+24"
+            141,
+            "+23"
         ],
         [
             "Alien Isolation",
@@ -69,8 +69,8 @@
         ],
         [
             "Oxenfree",
-            231,
-            "+27"
+            230,
+            "+26"
         ],
         [
             "Pony Island",
