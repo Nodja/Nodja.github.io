@@ -1,11 +1,11 @@
 {
     "compare_date": "2018-09-24 22:37:01",
-    "last_update": "2018-09-25 17:11:56",
+    "last_update": "2018-09-25 17:16:55",
     "nontop_voters": 239,
     "specials": {
         "LEON": 364
     },
-    "total_voters": 671,
+    "total_voters": 672,
     "votes": [
         [
             "Alan Wake",
@@ -14,8 +14,8 @@
         ],
         [
             "Alien Isolation",
-            344,
-            "+42"
+            343,
+            "+41"
         ],
         [
             "Corpse Party",
@@ -99,8 +99,8 @@
         ],
         [
             "Until Dawn",
-            502,
-            "+64"
+            504,
+            "+66"
         ],
         [
             "Yume Nikki",
