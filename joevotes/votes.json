@@ -1,6 +1,6 @@
 {
     "compare_date": "2018-09-24 22:37:01",
-    "last_update": "2018-09-25 11:52:17",
+    "last_update": "2018-09-25 11:57:15",
     "nontop_voters": 247,
     "specials": {
         "LEON": 364
@@ -49,8 +49,8 @@
         ],
         [
             "I Have No Mouth And I Must Scream",
-            400,
-            "+39"
+            401,
+            "+40"
         ],
         [
             "Luigi's Mansion",
@@ -59,18 +59,18 @@
         ],
         [
             "Metro 2033",
-            273,
-            "+41"
+            274,
+            "+42"
         ],
         [
             "Night in the Woods",
-            280,
-            "+32"
+            281,
+            "+33"
         ],
         [
             "Oxenfree",
-            231,
-            "+27"
+            232,
+            "+28"
         ],
         [
             "Pony Island",
@@ -79,8 +79,8 @@
         ],
         [
             "Resident Evil 4",
-            173,
-            "+26"
+            174,
+            "+27"
         ],
         [
             "SCP \u2013 Containment Breach",
@@ -89,8 +89,8 @@
         ],
         [
             "Silent Hill 1 + 2",
-            473,
-            "+57"
+            474,
+            "+58"
         ],
         [
             "Spooky's Jump Scare Mansion",
@@ -99,13 +99,13 @@
         ],
         [
             "Until Dawn",
-            493,
-            "+55"
+            495,
+            "+57"
         ],
         [
             "Yume Nikki",
-            230,
-            "+29"
+            231,
+            "+30"
         ]
     ]
 }
