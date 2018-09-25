@@ -1,11 +1,11 @@
 {
     "compare_date": "2018-09-23 19:40:23",
-    "last_update": "2018-09-25 01:22:01",
-    "nontop_voters": 256,
+    "last_update": "2018-09-25 01:27:02",
+    "nontop_voters": 255,
     "specials": {
         "LEON": 361
     },
-    "total_voters": 690,
+    "total_voters": 689,
     "votes": [
         [
             "Alan Wake",
@@ -39,13 +39,13 @@
         ],
         [
             "Ghost Trick",
-            187,
-            "+23"
+            186,
+            "+22"
         ],
         [
             "Grim Fandango",
-            174,
-            "+14"
+            175,
+            "+15"
         ],
         [
             "I Have No Mouth And I Must Scream",
@@ -99,8 +99,8 @@
         ],
         [
             "Until Dawn",
-            474,
-            "+68"
+            475,
+            "+69"
         ],
         [
             "Yume Nikki",
