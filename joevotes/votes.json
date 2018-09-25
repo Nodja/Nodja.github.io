@@ -1,11 +1,11 @@
 {
     "compare_date": "2018-09-24 22:37:01",
-    "last_update": "2018-09-25 12:07:16",
-    "nontop_voters": 246,
+    "last_update": "2018-09-25 12:12:15",
+    "nontop_voters": 245,
     "specials": {
         "LEON": 364
     },
-    "total_voters": 679,
+    "total_voters": 678,
     "votes": [
         [
             "Alan Wake",
@@ -69,8 +69,8 @@
         ],
         [
             "Oxenfree",
-            232,
-            "+28"
+            231,
+            "+27"
         ],
         [
             "Pony Island",
