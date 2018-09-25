@@ -1,11 +1,11 @@
 {
     "compare_date": "2018-09-23 19:40:23",
-    "last_update": "2018-09-25 00:42:01",
-    "nontop_voters": 263,
+    "last_update": "2018-09-25 00:47:01",
+    "nontop_voters": 262,
     "specials": {
         "LEON": 360
     },
-    "total_voters": 698,
+    "total_voters": 696,
     "votes": [
         [
             "Alan Wake",
@@ -19,18 +19,18 @@
         ],
         [
             "Corpse Party",
-            301,
-            "+38"
+            302,
+            "+39"
         ],
         [
             "Dead Space 1",
-            297,
-            "+36"
+            298,
+            "+37"
         ],
         [
             "Deadly Premonition",
-            127,
-            "+25"
+            128,
+            "+26"
         ],
         [
             "FEAR",
@@ -39,8 +39,8 @@
         ],
         [
             "Ghost Trick",
-            182,
-            "+18"
+            183,
+            "+19"
         ],
         [
             "Grim Fandango",
@@ -49,8 +49,8 @@
         ],
         [
             "I Have No Mouth And I Must Scream",
-            379,
-            "+47"
+            380,
+            "+48"
         ],
         [
             "Luigi's Mansion",
@@ -59,8 +59,8 @@
         ],
         [
             "Metro 2033",
-            254,
-            "+36"
+            255,
+            "+37"
         ],
         [
             "Night in the Woods",
@@ -84,13 +84,13 @@
         ],
         [
             "SCP \u2013 Containment Breach",
-            229,
-            "+18"
+            230,
+            "+19"
         ],
         [
             "Silent Hill 1 + 2",
-            438,
-            "+46"
+            439,
+            "+47"
         ],
         [
             "Spooky's Jump Scare Mansion",
@@ -99,13 +99,13 @@
         ],
         [
             "Until Dawn",
-            469,
-            "+63"
+            470,
+            "+64"
         ],
         [
             "Yume Nikki",
-            218,
-            "+25"
+            219,
+            "+26"
         ]
     ]
 }
