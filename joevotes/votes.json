@@ -1,11 +1,11 @@
 {
     "compare_date": "2018-09-24 22:37:01",
-    "last_update": "2018-09-25 09:22:11",
+    "last_update": "2018-09-25 09:27:11",
     "nontop_voters": 245,
     "specials": {
         "LEON": 364
     },
-    "total_voters": 677,
+    "total_voters": 676,
     "votes": [
         [
             "Alan Wake",
@@ -14,13 +14,13 @@
         ],
         [
             "Alien Isolation",
-            335,
-            "+33"
+            336,
+            "+34"
         ],
         [
             "Corpse Party",
-            314,
-            "+38"
+            315,
+            "+39"
         ],
         [
             "Dead Space 1",
@@ -39,13 +39,13 @@
         ],
         [
             "Ghost Trick",
-            193,
-            "+21"
+            194,
+            "+22"
         ],
         [
             "Grim Fandango",
-            182,
-            "+15"
+            183,
+            "+16"
         ],
         [
             "I Have No Mouth And I Must Scream",
@@ -54,8 +54,8 @@
         ],
         [
             "Luigi's Mansion",
-            340,
-            "+35"
+            341,
+            "+36"
         ],
         [
             "Metro 2033",
@@ -64,8 +64,8 @@
         ],
         [
             "Night in the Woods",
-            276,
-            "+28"
+            278,
+            "+30"
         ],
         [
             "Oxenfree",
@@ -104,8 +104,8 @@
         ],
         [
             "Yume Nikki",
-            227,
-            "+26"
+            228,
+            "+27"
         ]
     ]
 }
