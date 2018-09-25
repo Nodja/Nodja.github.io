@@ -1,6 +1,6 @@
 {
     "compare_date": "2018-09-24 22:37:01",
-    "last_update": "2018-09-25 10:52:13",
+    "last_update": "2018-09-25 10:57:14",
     "nontop_voters": 247,
     "specials": {
         "LEON": 364
@@ -24,8 +24,8 @@
         ],
         [
             "Dead Space 1",
-            305,
-            "+27"
+            306,
+            "+28"
         ],
         [
             "Deadly Premonition",
@@ -64,8 +64,8 @@
         ],
         [
             "Night in the Woods",
-            279,
-            "+31"
+            280,
+            "+32"
         ],
         [
             "Oxenfree",
@@ -79,8 +79,8 @@
         ],
         [
             "Resident Evil 4",
-            172,
-            "+25"
+            173,
+            "+26"
         ],
         [
             "SCP \u2013 Containment Breach",
@@ -89,8 +89,8 @@
         ],
         [
             "Silent Hill 1 + 2",
-            472,
-            "+56"
+            473,
+            "+57"
         ],
         [
             "Spooky's Jump Scare Mansion",
@@ -99,13 +99,13 @@
         ],
         [
             "Until Dawn",
-            491,
-            "+53"
+            492,
+            "+54"
         ],
         [
             "Yume Nikki",
-            229,
-            "+28"
+            230,
+            "+29"
         ]
     ]
 }
