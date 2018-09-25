@@ -1,71 +1,111 @@
 {
     "compare_date": "2018-09-23 19:40:23",
-    "last_update": "2018-09-24 22:41:58",
-    "nontop_voters": 65,
+    "last_update": "2018-09-24 22:46:59",
+    "nontop_voters": 257,
     "specials": {
-        "LEON": 357
+        "LEON": 358
     },
-    "total_voters": 553,
+    "total_voters": 703,
     "votes": [
         [
-            "I Have No Mouth And I Must Scream",
-            112,
-            "-220"
-        ],
-        [
-            "Luigi's Mansion",
-            311,
-            "+16"
-        ],
-        [
-            "Metro 2033",
-            239,
-            "+21"
-        ],
-        [
-            "Night in the Woods",
-            252,
-            "+15"
-        ],
-        [
-            "Oxenfree",
-            208,
-            "+18"
-        ],
-        [
-            "Pony Island",
-            171,
+            "Alan Wake",
+            121,
             "+11"
         ],
         [
-            "Resident Evil 4",
-            149,
+            "Alien Isolation",
+            302,
+            "+22"
+        ],
+        [
+            "Corpse Party",
+            286,
+            "+23"
+        ],
+        [
+            "Dead Space 1",
+            284,
+            "+23"
+        ],
+        [
+            "Deadly Premonition",
+            119,
+            "+17"
+        ],
+        [
+            "FEAR",
+            108,
             "+10"
         ],
         [
+            "Ghost Trick",
+            177,
+            "+13"
+        ],
+        [
+            "Grim Fandango",
+            167,
+            "+7"
+        ],
+        [
+            "I Have No Mouth And I Must Scream",
+            367,
+            "+35"
+        ],
+        [
+            "Luigi's Mansion",
+            321,
+            "+26"
+        ],
+        [
+            "Metro 2033",
+            245,
+            "+27"
+        ],
+        [
+            "Night in the Woods",
+            260,
+            "+23"
+        ],
+        [
+            "Oxenfree",
+            211,
+            "+21"
+        ],
+        [
+            "Pony Island",
+            175,
+            "+15"
+        ],
+        [
+            "Resident Evil 4",
+            151,
+            "+12"
+        ],
+        [
             "SCP \u2013 Containment Breach",
-            222,
-            "+11"
+            223,
+            "+12"
         ],
         [
             "Silent Hill 1 + 2",
-            421,
-            "+29"
+            427,
+            "+35"
         ],
         [
             "Spooky's Jump Scare Mansion",
-            110,
-            "+11"
+            113,
+            "+14"
         ],
         [
             "Until Dawn",
-            444,
-            "+38"
+            452,
+            "+46"
         ],
         [
             "Yume Nikki",
-            208,
-            "+15"
+            209,
+            "+16"
         ]
     ]
 }
