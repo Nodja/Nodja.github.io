@@ -1,11 +1,11 @@
 {
     "compare_date": "2018-09-24 22:37:01",
-    "last_update": "2018-09-25 05:22:06",
+    "last_update": "2018-09-25 05:27:06",
     "nontop_voters": 245,
     "specials": {
         "LEON": 364
     },
-    "total_voters": 680,
+    "total_voters": 679,
     "votes": [
         [
             "Alan Wake",
@@ -24,8 +24,8 @@
         ],
         [
             "Dead Space 1",
-            306,
-            "+28"
+            305,
+            "+27"
         ],
         [
             "Deadly Premonition",
@@ -64,8 +64,8 @@
         ],
         [
             "Night in the Woods",
-            273,
-            "+25"
+            274,
+            "+26"
         ],
         [
             "Oxenfree",
