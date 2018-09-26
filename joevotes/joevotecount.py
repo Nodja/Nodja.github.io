@@ -4,6 +4,7 @@ import json
 import os
 import asyncio
 
+from exporthistory import export_history
 # I know the following code is not super pretty, but it works :D
 
 async def update_votes(messages):
@@ -71,10 +72,13 @@ async def update_votes(messages):
         f.write(json.dumps(vote_data, indent=4, sort_keys=True))
         f.truncate()
     
+    
     # push to github, repo preconfigured
     repo_dir = r"C:\Users\Nodja\Desktop\proj\Nodja.github.io"
     os.chdir(repo_dir)
+    export_history()
     os.system("git add joevotes\\votes.json")
+    os.system("git add joevotes\\vote_history.json")
     os.system("git commit -m \"Update votes (automated)\"")
     os.system("git push origin")
     
@@ -101,7 +105,7 @@ async def fetch_votes():
     async for message in channel.history(after=dt_from, limit=200):
         if message.created_at >= dt_to:
             break
-        print(message.id, message.created_at, message.content)
+        # print(message.id, message.created_at, message.content)
         messages.append(message)
         
     dt_leon = datetime.datetime(2018, 9, 22, 20, 24, 0)

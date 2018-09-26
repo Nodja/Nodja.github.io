@@ -1,46 +1,52 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
 </head>
-<body>
-<div id="app">
-    <v-app dark>
-        <v-content>
-            <v-container grid-list-md >
-                <v-layout row wrap >
-                    <v-flex xs10 offset-xs1 text-xs-center>
-                        <h1>Joseph Anderson's Halloween Voting </h1>
-                        A <a href="https://github.com/Nodja/Nodja.github.io/blob/master/joevotes/joevotecount.py">python script</a> on my home computer updates this data every 5 minutes. <br>
-                        To vote you need to have joined discord before the voting started (you'll have the halloween voter role) and go on the #halloween-voting-event
-                        channel on <a href="https://discordapp.com/invite/8gSBsYC">the discord server</a>.
-                        <br><br>
 
-                        Last updated: {{ last_update }} EST <br>
-                        Votes compared with votes from: {{ compare_date }} <br><br>
-                        {{ total_voters }} people have voted. <br>
-                        {{ nontop_voters }} people have not voted in the top 10. <br><br>
-                        <template v-if="specials['LEON']">
-                            {{ specials['LEON'] }} out of 11037 people like to drive memes to the ground (LEON votes) <br>
-                        </template>
-                    </v-flex>
+<body>
+    <div id="app">
+        <v-app dark>
+            <v-content>
+                <v-container grid-list-md>
+                    <v-layout row wrap>
+                        <v-flex xs10 offset-xs1 text-xs-center>
+                            <h1>Joseph Anderson's Halloween Voting </h1>
+                            A <a href="https://github.com/Nodja/Nodja.github.io/blob/master/joevotes/joevotecount.py">python
+                                script</a> on my home computer updates this data every 5 minutes. <br>
+                            To vote you need to have joined discord before the voting started (you'll have the
+                            halloween voter role) and go on the #halloween-voting-event
+                            channel on <a href="https://discordapp.com/invite/8gSBsYC">the discord server</a>.
+                            <br><br>
+
+                            Last updated: {{ last_update }} EST <br>
+                            Votes compared with votes from: {{ compare_date }} <br><br>
+                            {{ total_voters }} people have voted. <br>
+                            {{ nontop_voters }} people have not voted in the top 10. <br><br>
+                            <template v-if="specials['LEON']">
+                                {{ specials['LEON'] }} out of 11037 people like to drive memes to the ground (LEON
+                                votes) <br>
+                            </template>
+                        </v-flex>
+                    </v-layout>
                     <v-layout>
-                        <table>
+                        <table width="100%">
                             <tr v-for="(vote, index) in votes">
                                 <td style="text-align: right;padding-right: 5px;">
-                                    {{ index + 1 }}. 
+                                    {{ index + 1 }}.
                                 </td>
                                 <td style="min-width: 250px">
                                     {{ vote[0] }}
                                 </td>
                                 <td style="min-width: 80px">
-                                    {{ vote[1] }} 
+                                    {{ vote[1] }}
                                     (
-                                    <span style="color: green" v-if="vote[2].startsWith('+')" >{{ vote[2] }}</span>
-                                    <span style="color: red" v-else-if="vote[2].startsWith('-')" >{{ vote[2] }}</span>
-                                    <span v-else >{{ vote[2] }}</span>
+                                    <span style="color: green" v-if="vote[2].startsWith('+')">{{ vote[2] }}</span>
+                                    <span style="color: red" v-else-if="vote[2].startsWith('-')">{{ vote[2] }}</span>
+                                    <span v-else>{{ vote[2] }}</span>
                                     )
                                 </td>
                                 <td style="min-width:100px; width: 100%">
@@ -49,60 +55,111 @@
                             </tr>
                         </table>
                     </v-layout>
-                </v-layout>
-            </v-container>
-        </v-content>
-    </v-app>
-</div>
 
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+                </v-container>
+                <v-container text-xs-center>
+                    <v-btn v-if="chartLoaded === false" @click="loadHistory()">
+                        Load Vote History (last 24h)
+                    </v-btn>
+                    <line-chart v-if="chartLoaded" height="1000px" :data="chartData" :max="chartMax" :dataset="chartDataset"
+                        :library="chartLibrary" :colors="chartColors"></line-chart>
 
-<script>
-    function comparator(a, b) {
-        if (a[1] < b[1]) return 1;
-        if (a[1] > b[1]) return -1;
-        return 0;
-    }
+                </v-container>
+            </v-content>
+        </v-app>
+    </div>
 
-    new Vue({
-        el: '#app',
-        methods: {
-            loadVotes: function () {
-                axios.get('votes.json')
-                    .then(response => {
-                        this.votes = response.data['votes'];
-                        this.last_update = response.data['last_update'];
-                        this.total_voters = response.data['total_voters'];
-                        this.nontop_voters = response.data['nontop_voters'];
-                        this.compare_date = response.data['compare_date'];
-                        this.votes.sort(comparator);
-                        this.specials = response.data['specials'];
-                        var votes_max = Math.floor(this.votes[0][1]);
-                        for (var vote of this.votes) {
-                            var percentage = vote[1] / votes_max * 100;
-                            vote.push(percentage);
-                        }
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+    <script src="https://unpkg.com/chart.js@2.7.2/dist/Chart.bundle.js"></script>
+    <script src="https://unpkg.com/vue-chartkick@0.5.0"></script>
 
-                    })
-            }
-        },
-        mounted() {
-            this.loadVotes();
-            setInterval(function () {
+
+
+    <script>
+        function comparator(a, b) {
+            if (a[1] < b[1]) return 1;
+            if (a[1] > b[1]) return -1;
+            return 0;
+        }
+
+
+        new Vue({
+            el: '#app',
+            methods: {
+                loadVotes() {
+                    axios.get('votes.json')
+                        .then(response => {
+                            this.votes = response.data['votes'];
+                            this.last_update = response.data['last_update'];
+                            this.total_voters = response.data['total_voters'];
+                            this.nontop_voters = response.data['nontop_voters'];
+                            this.compare_date = response.data['compare_date'];
+                            this.votes.sort(comparator);
+                            this.specials = response.data['specials'];
+                            var votes_max = Math.floor(this.votes[0][1]);
+                            for (var vote of this.votes) {
+                                var percentage = vote[1] / votes_max * 100;
+                                vote.push(percentage);
+                            }
+
+                        })
+                },
+                loadHistory() {
+                    axios.get('vote_history.json')
+                        .then(response => {
+                            this.chartMax = response.data['max_vote'];
+                            this.chartData = response.data['history'];
+                            this.chartLoaded = true;
+                        })
+                }
+            },
+            mounted() {
                 this.loadVotes();
-            }.bind(this), 60000);
-        },
-        data: {
-            votes: [],
-            last_update: null,
-            compare_date: null,
-            total_voters: 0,
-            nontop_voters: 0,
-            specials: {}
-        },
-    })
-</script>
+                setInterval(function () {
+                    this.loadVotes();
+                }.bind(this), 60000);
+            },
+            data: {
+                votes: [],
+                last_update: null,
+                compare_date: null,
+                total_voters: 0,
+                nontop_voters: 0,
+                specials: {},
+                chartLoaded: false,
+                chartData: [],
+                chartDataset: { pointRadius: 0 },
+                chartLibrary: {
+                    legend: {
+                        labels: {
+                            fontColor: "white"
+                        }
+                    },
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                fontColor: "white",
+                            }
+                        }],
+                        xAxes: [{
+                            ticks: {
+                                fontColor: "white",
+                            }
+                        }]
+                    }
+                },
+                chartColors: ["#f70021", "#6b363d", "#850023", "#f70084", "#852156", "#85637a", "#f7baf3", "#f700e7", "#400078", "#ad7cf7", "#664991", "#50506b", "#939ac4", "#0042f7", "#002152", "#0084f7", "#3ebaf7", "#00566b", "#00e7f7", "#6d918a", "#24916d", "#7cf79d", "#3d5243", "#009100", "#63f700", "#a2b88a", "#506b1b", "#c7d134", "#f7ba3e", "#decba6", "#856321", "#f78400", "#5e482f", "#5e2600", "#f76f3e", "#9e8177", "#851200", "#f77c7c",
+                    "#f70021", "#6b363d", "#850023", "#f70084", "#852156", "#85637a", "#f7baf3", "#f700e7", "#400078", "#ad7cf7", "#664991", "#50506b", "#939ac4", "#0042f7", "#002152", "#0084f7", "#3ebaf7", "#00566b", "#00e7f7", "#6d918a", "#24916d", "#7cf79d", "#3d5243", "#009100", "#63f700", "#a2b88a", "#506b1b", "#c7d134", "#f7ba3e", "#decba6", "#856321", "#f78400", "#5e482f", "#5e2600", "#f76f3e", "#9e8177", "#851200", "#f77c7c",
+                    "#f70021", "#6b363d", "#850023", "#f70084", "#852156", "#85637a", "#f7baf3", "#f700e7", "#400078", "#ad7cf7", "#664991", "#50506b", "#939ac4", "#0042f7", "#002152", "#0084f7", "#3ebaf7", "#00566b", "#00e7f7", "#6d918a", "#24916d", "#7cf79d", "#3d5243", "#009100", "#63f700", "#a2b88a", "#506b1b", "#c7d134", "#f7ba3e", "#decba6", "#856321", "#f78400", "#5e482f", "#5e2600", "#f76f3e", "#9e8177", "#851200", "#f77c7c",
+                    "#f70021", "#6b363d", "#850023", "#f70084", "#852156", "#85637a", "#f7baf3", "#f700e7", "#400078", "#ad7cf7", "#664991", "#50506b", "#939ac4", "#0042f7", "#002152", "#0084f7", "#3ebaf7", "#00566b", "#00e7f7", "#6d918a", "#24916d", "#7cf79d", "#3d5243", "#009100", "#63f700", "#a2b88a", "#506b1b", "#c7d134", "#f7ba3e", "#decba6", "#856321", "#f78400", "#5e482f", "#5e2600", "#f76f3e", "#9e8177", "#851200", "#f77c7c",
+                    "#f70021", "#6b363d", "#850023", "#f70084", "#852156", "#85637a", "#f7baf3", "#f700e7", "#400078", "#ad7cf7", "#664991", "#50506b", "#939ac4", "#0042f7", "#002152", "#0084f7", "#3ebaf7", "#00566b", "#00e7f7", "#6d918a", "#24916d", "#7cf79d", "#3d5243", "#009100", "#63f700", "#a2b88a", "#506b1b", "#c7d134", "#f7ba3e", "#decba6", "#856321", "#f78400", "#5e482f", "#5e2600", "#f76f3e", "#9e8177", "#851200", "#f77c7c"
+                ],
+                chartMax: 0
+            },
+        })
+    </script>
 </body>
+
 </html>
