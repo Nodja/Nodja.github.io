@@ -1,11 +1,11 @@
 {
     "compare_date": "2018-09-24 22:37:01",
-    "last_update": "2018-09-26 02:33:51",
-    "nontop_voters": 241,
+    "last_update": "2018-09-26 02:38:51",
+    "nontop_voters": 243,
     "specials": {
         "LEON": 365
     },
-    "total_voters": 667,
+    "total_voters": 669,
     "votes": [
         [
             "Alan Wake",
@@ -24,8 +24,8 @@
         ],
         [
             "Dead Space 1",
-            316,
-            "+38"
+            317,
+            "+39"
         ],
         [
             "Deadly Premonition",
@@ -54,18 +54,18 @@
         ],
         [
             "Luigi's Mansion",
-            353,
-            "+48"
-        ],
-        [
-            "Metro 2033",
-            279,
+            352,
             "+47"
         ],
         [
+            "Metro 2033",
+            278,
+            "+46"
+        ],
+        [
             "Night in the Woods",
-            290,
-            "+42"
+            291,
+            "+43"
         ],
         [
             "Oxenfree",
@@ -74,8 +74,8 @@
         ],
         [
             "Pony Island",
-            198,
-            "+27"
+            197,
+            "+26"
         ],
         [
             "Resident Evil 4",
