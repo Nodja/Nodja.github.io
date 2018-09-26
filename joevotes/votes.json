@@ -1,11 +1,11 @@
 {
     "compare_date": "2018-09-24 22:37:01",
-    "last_update": "2018-09-25 23:23:47",
-    "nontop_voters": 238,
+    "last_update": "2018-09-25 23:28:48",
+    "nontop_voters": 237,
     "specials": {
         "LEON": 365
     },
-    "total_voters": 669,
+    "total_voters": 668,
     "votes": [
         [
             "Alan Wake",
@@ -79,8 +79,8 @@
         ],
         [
             "Resident Evil 4",
-            179,
-            "+32"
+            180,
+            "+33"
         ],
         [
             "SCP \u2013 Containment Breach",
