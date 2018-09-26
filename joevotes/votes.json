@@ -1,7 +1,7 @@
 {
     "compare_date": "2018-09-24 22:37:01",
-    "last_update": "2018-09-26 05:38:58",
-    "nontop_voters": 243,
+    "last_update": "2018-09-26 05:43:55",
+    "nontop_voters": 245,
     "specials": {
         "LEON": 367
     },
@@ -19,13 +19,13 @@
         ],
         [
             "Corpse Party",
-            323,
-            "+47"
+            324,
+            "+48"
         ],
         [
             "Dead Space 1",
-            317,
-            "+39"
+            318,
+            "+40"
         ],
         [
             "Deadly Premonition",
@@ -39,13 +39,13 @@
         ],
         [
             "Ghost Trick",
-            201,
-            "+29"
+            202,
+            "+30"
         ],
         [
             "Grim Fandango",
-            188,
-            "+21"
+            189,
+            "+22"
         ],
         [
             "I Have No Mouth And I Must Scream",
@@ -54,8 +54,8 @@
         ],
         [
             "Luigi's Mansion",
-            353,
-            "+48"
+            354,
+            "+49"
         ],
         [
             "Metro 2033",
@@ -64,13 +64,13 @@
         ],
         [
             "Night in the Woods",
-            291,
-            "+43"
+            292,
+            "+44"
         ],
         [
             "Oxenfree",
-            239,
-            "+35"
+            240,
+            "+36"
         ],
         [
             "Pony Island",
@@ -89,8 +89,8 @@
         ],
         [
             "Silent Hill 1 + 2",
-            486,
-            "+70"
+            487,
+            "+71"
         ],
         [
             "Spooky's Jump Scare Mansion",
@@ -99,13 +99,13 @@
         ],
         [
             "Until Dawn",
-            509,
-            "+71"
+            510,
+            "+72"
         ],
         [
             "Yume Nikki",
-            241,
-            "+40"
+            242,
+            "+41"
         ]
     ]
 }
