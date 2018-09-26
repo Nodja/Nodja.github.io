@@ -1,7 +1,7 @@
 {
     "compare_date": "2018-09-24 22:37:01",
-    "last_update": "2018-09-25 20:54:38",
-    "nontop_voters": 240,
+    "last_update": "2018-09-25 20:59:38",
+    "nontop_voters": 245,
     "specials": {
         "LEON": 365
     },
@@ -9,8 +9,8 @@
     "votes": [
         [
             "Alan Wake",
-            150,
-            "+32"
+            151,
+            "+33"
         ],
         [
             "Alien Isolation",
@@ -59,8 +59,8 @@
         ],
         [
             "Metro 2033",
-            278,
-            "+46"
+            279,
+            "+47"
         ],
         [
             "Night in the Woods",
@@ -79,13 +79,13 @@
         ],
         [
             "Resident Evil 4",
-            178,
-            "+31"
+            179,
+            "+32"
         ],
         [
             "SCP \u2013 Containment Breach",
-            240,
-            "+21"
+            241,
+            "+22"
         ],
         [
             "Silent Hill 1 + 2",
