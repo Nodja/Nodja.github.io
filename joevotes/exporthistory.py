@@ -6,8 +6,8 @@ from dateutil.parser import parse as dateutil_parse
 import datetime
 
 def export_history():
-    os.system('git fast-export HEAD -- votes.json > joevotes\\vote_data')
-    data = open('vote_data', 'rb').read()
+    os.system('git fast-export HEAD -- joevotes\\votes.json > joevotes\\vote_data')
+    data = open('joevotes\\vote_data', 'rb').read()
 
     data_segments = []
     cur_pos = 0
