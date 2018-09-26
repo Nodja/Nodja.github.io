@@ -1,9 +1,9 @@
 {
     "compare_date": "2018-09-24 22:37:01",
-    "last_update": "2018-09-26 15:49:09",
+    "last_update": "2018-09-26 15:54:09",
     "nontop_voters": 244,
     "specials": {
-        "LEON": 369
+        "LEON": 370
     },
     "total_voters": 667,
     "votes": [
@@ -64,8 +64,8 @@
         ],
         [
             "Night in the Woods",
-            293,
-            "+45"
+            294,
+            "+46"
         ],
         [
             "Oxenfree",
@@ -74,8 +74,8 @@
         ],
         [
             "Pony Island",
-            202,
-            "+31"
+            203,
+            "+32"
         ],
         [
             "Resident Evil 4",
@@ -94,18 +94,18 @@
         ],
         [
             "Spooky's Jump Scare Mansion",
-            130,
-            "+23"
+            131,
+            "+24"
         ],
         [
             "Until Dawn",
-            515,
-            "+77"
+            516,
+            "+78"
         ],
         [
             "Yume Nikki",
-            244,
-            "+43"
+            245,
+            "+44"
         ]
     ]
 }
