@@ -1,9 +1,9 @@
 {
     "compare_date": "2018-09-24 22:37:01",
-    "last_update": "2018-09-25 23:53:48",
+    "last_update": "2018-09-25 23:58:48",
     "nontop_voters": 237,
     "specials": {
-        "LEON": 365
+        "LEON": 366
     },
     "total_voters": 668,
     "votes": [
@@ -19,13 +19,13 @@
         ],
         [
             "Corpse Party",
-            322,
-            "+46"
+            323,
+            "+47"
         ],
         [
             "Dead Space 1",
-            315,
-            "+37"
+            316,
+            "+38"
         ],
         [
             "Deadly Premonition",
@@ -54,8 +54,8 @@
         ],
         [
             "Luigi's Mansion",
-            351,
-            "+46"
+            352,
+            "+47"
         ],
         [
             "Metro 2033",
@@ -64,8 +64,8 @@
         ],
         [
             "Night in the Woods",
-            289,
-            "+41"
+            290,
+            "+42"
         ],
         [
             "Oxenfree",
@@ -79,8 +79,8 @@
         ],
         [
             "Resident Evil 4",
-            180,
-            "+33"
+            181,
+            "+34"
         ],
         [
             "SCP \u2013 Containment Breach",
@@ -89,8 +89,8 @@
         ],
         [
             "Silent Hill 1 + 2",
-            484,
-            "+68"
+            485,
+            "+69"
         ],
         [
             "Spooky's Jump Scare Mansion",
@@ -99,13 +99,13 @@
         ],
         [
             "Until Dawn",
-            509,
-            "+71"
+            510,
+            "+72"
         ],
         [
             "Yume Nikki",
-            239,
-            "+38"
+            240,
+            "+39"
         ]
     ]
 }
