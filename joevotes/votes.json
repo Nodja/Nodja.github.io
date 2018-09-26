@@ -1,11 +1,11 @@
 {
     "compare_date": "2018-09-24 22:37:01",
-    "last_update": "2018-09-26 12:09:04",
-    "nontop_voters": 245,
+    "last_update": "2018-09-26 12:14:05",
+    "nontop_voters": 243,
     "specials": {
         "LEON": 369
     },
-    "total_voters": 668,
+    "total_voters": 667,
     "votes": [
         [
             "Alan Wake",
@@ -54,8 +54,8 @@
         ],
         [
             "Luigi's Mansion",
-            357,
-            "+52"
+            358,
+            "+53"
         ],
         [
             "Metro 2033",
@@ -84,8 +84,8 @@
         ],
         [
             "SCP \u2013 Containment Breach",
-            242,
-            "+23"
+            243,
+            "+24"
         ],
         [
             "Silent Hill 1 + 2",
