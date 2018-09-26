@@ -35,7 +35,7 @@ def export_history():
         file_data = data[data_pos:data_pos + data_length]
         if file_data.startswith(b'{'):
             vote_data = json.loads(file_data)
-            date = vote_data['last_update']
+            date = vote_data['last_update'] + ' EST'
             if dateutil_parse(date) < datetime.datetime.now() - datetime.timedelta(days=1) :
                 continue
             for vote in vote_data['votes']:
