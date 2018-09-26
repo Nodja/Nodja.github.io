@@ -1,9 +1,9 @@
 {
     "compare_date": "2018-09-24 22:37:01",
-    "last_update": "2018-09-26 04:53:54",
+    "last_update": "2018-09-26 04:58:54",
     "nontop_voters": 243,
     "specials": {
-        "LEON": 365
+        "LEON": 367
     },
     "total_voters": 669,
     "votes": [
@@ -14,8 +14,8 @@
         ],
         [
             "Alien Isolation",
-            350,
-            "+48"
+            351,
+            "+49"
         ],
         [
             "Corpse Party",
