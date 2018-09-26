@@ -1,11 +1,11 @@
 {
     "compare_date": "2018-09-24 22:37:01",
-    "last_update": "2018-09-26 10:54:03",
-    "nontop_voters": 235,
+    "last_update": "2018-09-26 10:59:02",
+    "nontop_voters": 236,
     "specials": {
         "LEON": 369
     },
-    "total_voters": 667,
+    "total_voters": 668,
     "votes": [
         [
             "Alan Wake",
@@ -39,8 +39,8 @@
         ],
         [
             "Ghost Trick",
-            203,
-            "+31"
+            204,
+            "+32"
         ],
         [
             "Grim Fandango",
