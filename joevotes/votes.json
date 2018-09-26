@@ -1,7 +1,7 @@
 {
     "compare_date": "2018-09-24 22:37:01",
-    "last_update": "2018-09-26 19:39:11",
-    "nontop_voters": 243,
+    "last_update": "2018-09-26 19:44:12",
+    "nontop_voters": 244,
     "specials": {
         "LEON": 370
     },
@@ -14,8 +14,8 @@
         ],
         [
             "Alien Isolation",
-            354,
-            "+52"
+            355,
+            "+53"
         ],
         [
             "Corpse Party",
@@ -94,18 +94,18 @@
         ],
         [
             "Spooky's Jump Scare Mansion",
-            131,
-            "+24"
+            132,
+            "+25"
         ],
         [
             "Until Dawn",
-            516,
-            "+78"
+            517,
+            "+79"
         ],
         [
             "Yume Nikki",
-            246,
-            "+45"
+            247,
+            "+46"
         ]
     ]
 }
