@@ -1,9 +1,9 @@
 {
     "compare_date": "2018-09-24 22:37:01",
-    "last_update": "2018-09-26 10:09:00",
+    "last_update": "2018-09-26 10:14:02",
     "nontop_voters": 235,
     "specials": {
-        "LEON": 368
+        "LEON": 369
     },
     "total_voters": 667,
     "votes": [
@@ -74,8 +74,8 @@
         ],
         [
             "Pony Island",
-            199,
-            "+28"
+            200,
+            "+29"
         ],
         [
             "Resident Evil 4",
