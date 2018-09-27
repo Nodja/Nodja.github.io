@@ -1,17 +1,12 @@
 {
     "compare_date": "2018-09-24 22:37:01",
-    "last_update": "2018-09-27 19:20:20",
-    "nontop_voters": 237,
+    "last_update": "2018-09-27 19:25:18",
+    "nontop_voters": 54,
     "specials": {
         "LEON": 372
     },
-    "total_voters": 664,
+    "total_voters": 481,
     "votes": [
-        [
-            "Alan Wake",
-            155,
-            "+37"
-        ],
         [
             "Alien Isolation",
             358,
@@ -28,24 +23,9 @@
             "+52"
         ],
         [
-            "Deadly Premonition",
-            154,
-            "+44"
-        ],
-        [
-            "FEAR",
-            135,
-            "+33"
-        ],
-        [
             "Ghost Trick",
             210,
             "+38"
-        ],
-        [
-            "Grim Fandango",
-            194,
-            "+27"
         ],
         [
             "I Have No Mouth And I Must Scream",
@@ -73,16 +53,6 @@
             "+47"
         ],
         [
-            "Pony Island",
-            207,
-            "+36"
-        ],
-        [
-            "Resident Evil 4",
-            188,
-            "+41"
-        ],
-        [
             "SCP \u2013 Containment Breach",
             245,
             "+26"
@@ -91,11 +61,6 @@
             "Silent Hill 1 + 2",
             495,
             "+79"
-        ],
-        [
-            "Spooky's Jump Scare Mansion",
-            132,
-            "+25"
         ],
         [
             "Until Dawn",
