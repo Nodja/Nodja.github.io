@@ -1,11 +1,11 @@
 {
     "compare_date": "2018-09-24 22:37:01",
-    "last_update": "2018-09-27 04:39:21",
-    "nontop_voters": 238,
+    "last_update": "2018-09-27 04:44:21",
+    "nontop_voters": 237,
     "specials": {
         "LEON": 370
     },
-    "total_voters": 658,
+    "total_voters": 660,
     "votes": [
         [
             "Alan Wake",
@@ -14,18 +14,18 @@
         ],
         [
             "Alien Isolation",
-            356,
-            "+54"
+            355,
+            "+53"
         ],
         [
             "Corpse Party",
-            330,
-            "+54"
+            329,
+            "+53"
         ],
         [
             "Dead Space 1",
-            328,
-            "+50"
+            327,
+            "+49"
         ],
         [
             "Deadly Premonition",
@@ -59,8 +59,8 @@
         ],
         [
             "Metro 2033",
-            283,
-            "+51"
+            282,
+            "+50"
         ],
         [
             "Night in the Woods",
@@ -74,18 +74,18 @@
         ],
         [
             "Pony Island",
-            207,
-            "+36"
+            206,
+            "+35"
         ],
         [
             "Resident Evil 4",
-            187,
-            "+40"
+            186,
+            "+39"
         ],
         [
             "SCP \u2013 Containment Breach",
-            247,
-            "+28"
+            246,
+            "+27"
         ],
         [
             "Silent Hill 1 + 2",
@@ -104,8 +104,8 @@
         ],
         [
             "Yume Nikki",
-            249,
-            "+48"
+            248,
+            "+47"
         ]
     ]
 }
