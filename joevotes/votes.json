@@ -1,11 +1,11 @@
 {
     "compare_date": "2018-09-24 22:37:01",
-    "last_update": "2018-09-27 06:39:23",
-    "nontop_voters": 238,
+    "last_update": "2018-09-27 06:44:23",
+    "nontop_voters": 239,
     "specials": {
         "LEON": 370
     },
-    "total_voters": 661,
+    "total_voters": 662,
     "votes": [
         [
             "Alan Wake",
@@ -14,8 +14,8 @@
         ],
         [
             "Alien Isolation",
-            355,
-            "+53"
+            356,
+            "+54"
         ],
         [
             "Corpse Party",
