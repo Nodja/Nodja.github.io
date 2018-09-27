@@ -47,7 +47,7 @@ async def update_votes(messages):
     olddata_date = olddata['last_update']
 
     votes = sorted(votes, key=lambda x: x[1], reverse=True)
-    top_x = votes[:10]
+    top_x = votes[:5]
 
     topx_voters = []
     for voter in voters:
