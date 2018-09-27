@@ -1,46 +1,46 @@
 {
     "compare_date": "2018-09-24 22:37:01",
-    "last_update": "2018-09-27 19:33:08",
-    "nontop_voters": 67,
+    "last_update": "2018-09-27 19:35:33",
+    "nontop_voters": 69,
     "specials": {
         "LEON": 376
     },
-    "total_voters": 386,
+    "total_voters": 385,
     "votes": [
         [
             "Metro 2033",
-            204,
-            "-28"
+            180,
+            "-52"
         ],
         [
             "Night in the Woods",
-            306,
-            "+58"
+            308,
+            "+60"
         ],
         [
             "Oxenfree",
-            263,
-            "+59"
+            265,
+            "+61"
         ],
         [
             "SCP \u2013 Containment Breach",
-            251,
-            "+32"
+            253,
+            "+34"
         ],
         [
             "Silent Hill 1 + 2",
-            507,
-            "+91"
-        ],
-        [
-            "Until Dawn",
-            532,
+            510,
             "+94"
         ],
         [
+            "Until Dawn",
+            535,
+            "+97"
+        ],
+        [
             "Yume Nikki",
-            261,
-            "+60"
+            263,
+            "+62"
         ]
     ]
 }
