@@ -1,166 +1,111 @@
 {
-    "compare_date": "2018-09-23 19:40:23",
-    "last_update": "2018-09-24 22:37:01",
-    "nontop_voters": 450,
+    "compare_date": "2018-09-24 22:37:01",
+    "last_update": "2018-09-27 19:15:19",
+    "nontop_voters": 238,
     "specials": {
-        "LEON": 357
+        "LEON": 372
     },
-    "total_voters": 903,
+    "total_voters": 664,
     "votes": [
         [
             "Alan Wake",
-            118,
-            "+8"
+            155,
+            "+37"
         ],
         [
             "Alien Isolation",
-            302,
-            "+22"
-        ],
-        [
-            "Call of Cthulhu: Dark Corners of the Earth",
-            96,
-            "+8"
+            358,
+            "+56"
         ],
         [
             "Corpse Party",
-            276,
-            "+13"
-        ],
-        [
-            "Darkwood",
-            82,
-            "+4"
+            332,
+            "+56"
         ],
         [
             "Dead Space 1",
-            278,
-            "+17"
-        ],
-        [
-            "Dead Space 2",
-            92,
-            "+3"
+            330,
+            "+52"
         ],
         [
             "Deadly Premonition",
-            110,
-            "+8"
-        ],
-        [
-            "Eternal Darkness",
-            64,
-            "+3"
+            154,
+            "+44"
         ],
         [
             "FEAR",
-            102,
-            "+4"
-        ],
-        [
-            "Five Nights at Freddies",
-            97,
-            "+2"
+            135,
+            "+33"
         ],
         [
             "Ghost Trick",
-            172,
-            "+8"
+            210,
+            "+38"
         ],
         [
             "Grim Fandango",
-            167,
-            "+7"
+            194,
+            "+27"
         ],
         [
             "I Have No Mouth And I Must Scream",
-            361,
-            "+29"
-        ],
-        [
-            "Layers of Fear",
-            58,
-            "+5"
+            422,
+            "+61"
         ],
         [
             "Luigi's Mansion",
-            305,
-            "+10"
+            366,
+            "+61"
         ],
         [
             "Metro 2033",
-            232,
-            "+14"
+            284,
+            "+52"
         ],
         [
             "Night in the Woods",
-            248,
-            "+11"
-        ],
-        [
-            "Outlast",
-            90,
-            "+5"
+            299,
+            "+51"
         ],
         [
             "Oxenfree",
-            204,
-            "+14"
+            252,
+            "+48"
         ],
         [
             "Pony Island",
-            171,
-            "+11"
+            207,
+            "+36"
         ],
         [
             "Resident Evil 4",
-            147,
-            "+8"
-        ],
-        [
-            "Resident Evil Remake",
-            78,
-            "0"
+            188,
+            "+41"
         ],
         [
             "SCP \u2013 Containment Breach",
-            219,
-            "+8"
+            245,
+            "+26"
         ],
         [
             "Silent Hill 1 + 2",
-            416,
-            "+24"
+            495,
+            "+79"
         ],
         [
             "Spooky's Jump Scare Mansion",
-            107,
-            "+8"
-        ],
-        [
-            "Super Castlevania IV",
-            75,
-            "+4"
-        ],
-        [
-            "The Cat Lady",
-            85,
-            "-2"
-        ],
-        [
-            "The Witch's House",
-            53,
-            "+1"
+            132,
+            "+25"
         ],
         [
             "Until Dawn",
-            438,
-            "+32"
+            518,
+            "+80"
         ],
         [
             "Yume Nikki",
-            201,
-            "+8"
+            248,
+            "+47"
         ]
     ]
 }
