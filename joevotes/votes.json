@@ -1,11 +1,11 @@
 {
     "compare_date": "2018-09-24 22:37:01",
-    "last_update": "2018-09-27 07:24:25",
+    "last_update": "2018-09-27 07:29:25",
     "nontop_voters": 239,
     "specials": {
         "LEON": 370
     },
-    "total_voters": 662,
+    "total_voters": 663,
     "votes": [
         [
             "Alan Wake",
@@ -74,8 +74,8 @@
         ],
         [
             "Pony Island",
-            206,
-            "+35"
+            207,
+            "+36"
         ],
         [
             "Resident Evil 4",
@@ -84,8 +84,8 @@
         ],
         [
             "SCP \u2013 Containment Breach",
-            246,
-            "+27"
+            245,
+            "+26"
         ],
         [
             "Silent Hill 1 + 2",
@@ -104,8 +104,8 @@
         ],
         [
             "Yume Nikki",
-            250,
-            "+49"
+            249,
+            "+48"
         ]
     ]
 }
