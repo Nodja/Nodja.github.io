@@ -1,76 +1,46 @@
 {
     "compare_date": "2018-09-24 22:37:01",
-    "last_update": "2018-09-27 19:25:18",
-    "nontop_voters": 54,
+    "last_update": "2018-09-27 19:33:08",
+    "nontop_voters": 67,
     "specials": {
-        "LEON": 372
+        "LEON": 376
     },
-    "total_voters": 481,
+    "total_voters": 386,
     "votes": [
         [
-            "Alien Isolation",
-            358,
-            "+56"
-        ],
-        [
-            "Corpse Party",
-            332,
-            "+56"
-        ],
-        [
-            "Dead Space 1",
-            330,
-            "+52"
-        ],
-        [
-            "Ghost Trick",
-            210,
-            "+38"
-        ],
-        [
-            "I Have No Mouth And I Must Scream",
-            422,
-            "+61"
-        ],
-        [
-            "Luigi's Mansion",
-            366,
-            "+61"
-        ],
-        [
             "Metro 2033",
-            284,
-            "+52"
+            204,
+            "-28"
         ],
         [
             "Night in the Woods",
-            299,
-            "+51"
+            306,
+            "+58"
         ],
         [
             "Oxenfree",
-            251,
-            "+47"
+            263,
+            "+59"
         ],
         [
             "SCP \u2013 Containment Breach",
-            245,
-            "+26"
+            251,
+            "+32"
         ],
         [
             "Silent Hill 1 + 2",
-            495,
-            "+79"
+            507,
+            "+91"
         ],
         [
             "Until Dawn",
-            518,
-            "+80"
+            532,
+            "+94"
         ],
         [
             "Yume Nikki",
-            249,
-            "+48"
+            261,
+            "+60"
         ]
     ]
 }
