@@ -1,81 +1,81 @@
 {
     "compare_date": "2018-09-24 22:37:01",
-    "last_update": "2018-09-27 01:34:17",
-    "nontop_voters": 242,
+    "last_update": "2018-09-27 01:39:17",
+    "nontop_voters": 238,
     "specials": {
         "LEON": 370
     },
-    "total_voters": 664,
+    "total_voters": 660,
     "votes": [
         [
             "Alan Wake",
-            154,
-            "+36"
+            155,
+            "+37"
         ],
         [
             "Alien Isolation",
-            356,
-            "+54"
+            357,
+            "+55"
         ],
         [
             "Corpse Party",
-            328,
-            "+52"
+            329,
+            "+53"
         ],
         [
             "Dead Space 1",
-            327,
-            "+49"
+            328,
+            "+50"
         ],
         [
             "Deadly Premonition",
-            153,
-            "+43"
+            154,
+            "+44"
         ],
         [
             "FEAR",
-            133,
-            "+31"
+            134,
+            "+32"
         ],
         [
             "Ghost Trick",
-            208,
-            "+36"
+            209,
+            "+37"
         ],
         [
             "Grim Fandango",
-            192,
-            "+25"
+            193,
+            "+26"
         ],
         [
             "I Have No Mouth And I Must Scream",
-            420,
-            "+59"
-        ],
-        [
-            "Luigi's Mansion",
-            365,
+            421,
             "+60"
         ],
         [
+            "Luigi's Mansion",
+            366,
+            "+61"
+        ],
+        [
             "Metro 2033",
-            281,
-            "+49"
+            282,
+            "+50"
         ],
         [
             "Night in the Woods",
-            297,
-            "+49"
+            298,
+            "+50"
         ],
         [
             "Oxenfree",
-            244,
-            "+40"
+            245,
+            "+41"
         ],
         [
             "Pony Island",
-            205,
-            "+34"
+            206,
+            "+35"
         ],
         [
             "Resident Evil 4",
