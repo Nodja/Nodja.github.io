@@ -1,11 +1,11 @@
 {
     "compare_date": "2018-09-24 22:37:01",
-    "last_update": "2018-09-27 08:24:25",
-    "nontop_voters": 239,
+    "last_update": "2018-09-27 08:29:27",
+    "nontop_voters": 240,
     "specials": {
         "LEON": 370
     },
-    "total_voters": 663,
+    "total_voters": 664,
     "votes": [
         [
             "Alan Wake",
@@ -34,8 +34,8 @@
         ],
         [
             "FEAR",
-            135,
-            "+33"
+            136,
+            "+34"
         ],
         [
             "Ghost Trick",
