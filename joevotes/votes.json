@@ -1,31 +1,31 @@
 {
     "compare_date": "2018-09-24 22:37:01",
-    "last_update": "2018-09-27 11:54:32",
-    "nontop_voters": 240,
+    "last_update": "2018-09-27 19:10:51",
+    "nontop_voters": 238,
     "specials": {
-        "LEON": 370
+        "LEON": 372
     },
-    "total_voters": 663,
+    "total_voters": 664,
     "votes": [
         [
             "Alan Wake",
-            154,
-            "+36"
+            155,
+            "+37"
         ],
         [
             "Alien Isolation",
-            357,
-            "+55"
+            358,
+            "+56"
         ],
         [
             "Corpse Party",
-            330,
-            "+54"
+            332,
+            "+56"
         ],
         [
             "Dead Space 1",
-            328,
-            "+50"
+            330,
+            "+52"
         ],
         [
             "Deadly Premonition",
@@ -34,8 +34,8 @@
         ],
         [
             "FEAR",
-            136,
-            "+34"
+            135,
+            "+33"
         ],
         [
             "Ghost Trick",
@@ -44,23 +44,23 @@
         ],
         [
             "Grim Fandango",
-            193,
-            "+26"
+            194,
+            "+27"
         ],
         [
             "I Have No Mouth And I Must Scream",
-            421,
-            "+60"
+            422,
+            "+61"
         ],
         [
             "Luigi's Mansion",
-            365,
-            "+60"
+            366,
+            "+61"
         ],
         [
             "Metro 2033",
-            283,
-            "+51"
+            284,
+            "+52"
         ],
         [
             "Night in the Woods",
@@ -69,8 +69,8 @@
         ],
         [
             "Oxenfree",
-            246,
-            "+42"
+            252,
+            "+48"
         ],
         [
             "Pony Island",
@@ -79,8 +79,8 @@
         ],
         [
             "Resident Evil 4",
-            187,
-            "+40"
+            188,
+            "+41"
         ],
         [
             "SCP \u2013 Containment Breach",
@@ -89,8 +89,8 @@
         ],
         [
             "Silent Hill 1 + 2",
-            493,
-            "+77"
+            495,
+            "+79"
         ],
         [
             "Spooky's Jump Scare Mansion",
@@ -99,13 +99,13 @@
         ],
         [
             "Until Dawn",
-            518,
-            "+80"
+            519,
+            "+81"
         ],
         [
             "Yume Nikki",
-            249,
-            "+48"
+            248,
+            "+47"
         ]
     ]
 }
