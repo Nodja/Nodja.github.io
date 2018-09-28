@@ -124,4 +124,4 @@ async def fetch_votes():
 
 client = discord.Client()
 client.loop.create_task(fetch_votes())
-client.run("mfa.b0UY1SSJr-hAhQnxQ5aSZ3GlMcF9xbI8WoPyV_84A8s7Ld8yLP1a_LmUZCUqyCdP046_H-OfkT7JHj6svTWz", bot=False)
+client.run(os.environ['DISCORD_TOKEN'], bot=False)
