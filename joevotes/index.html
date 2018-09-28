@@ -37,7 +37,7 @@
                             <template slot="items" slot-scope="props">
                                 <td>{{ props.item.name }}</td>
                                 <td class="text-xs-right" width="5%">{{ props.index + 1 }}</td>
-                                <td class="text-xs-right" width="20%">{{ props.item[0] }}{{ props.item[0] }}</td>
+                                <td class="text-xs-right" width="20%">{{ props.item[0] }}</td>
                                 <td class="text-xs-right" width="10%">
                                     {{ props.item[1] }}
                                     (
@@ -48,7 +48,7 @@
                                     )
 
                                 </td>
-                                <td class="text-xs-right" width="75%">
+                                <td  width="75%">
                                     <v-layout row align-space-around fill-height>
                                         <div :style="{ width: props.item[3] + '%' , 'background-color': '#1976d2'}"></div>
                                         <div :style="{ width: 100 - props.item[3] + '%',  'background-color': '#1976d2', opacity: '0.3'}"></div>
