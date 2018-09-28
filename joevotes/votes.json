@@ -1,6 +1,6 @@
 {
     "compare_date": "2018-09-27 19:15:19",
-    "last_update": "2018-09-28 10:43:23",
+    "last_update": "2018-09-28 10:48:23",
     "nontop_voters": 65,
     "specials": {
         "LEON": 378
@@ -10,13 +10,13 @@
     "votes": [
         [
             "Alien Isolation",
-            375,
-            "+17"
+            374,
+            "+16"
         ],
         [
             "Corpse Party",
-            365,
-            "+33"
+            364,
+            "+32"
         ],
         [
             "Dead Space 1",
@@ -30,8 +30,8 @@
         ],
         [
             "I Have No Mouth And I Must Scream",
-            439,
-            "+17"
+            438,
+            "+16"
         ],
         [
             "Luigi's Mansion",
@@ -70,8 +70,8 @@
         ],
         [
             "Yume Nikki",
-            267,
-            "+19"
+            266,
+            "+18"
         ]
     ]
 }
