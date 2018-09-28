@@ -32,28 +32,30 @@
                             </template>
                         </v-flex>
                     </v-layout>
-                    <v-layout>
-                        <table width="100%">
-                            <tr v-for="(vote, index) in votes">
-                                <td style="text-align: right;padding-right: 5px;">
-                                    {{ index + 1 }}.
-                                </td>
-                                <td style="min-width: 250px">
-                                    {{ vote[0] }}
-                                </td>
-                                <td style="min-width: 80px">
-                                    {{ vote[1] }}
+                    <v-layout child-flex>
+                        <v-data-table :items="votes" hide-headers hide-actions>
+                            <template slot="items" slot-scope="props">
+                                <td>{{ props.item.name }}</td>
+                                <td class="text-xs-right" width="5%">{{ props.index + 1 }}</td>
+                                <td class="text-xs-right" width="20%">{{ props.item[0] }}{{ props.item[0] }}</td>
+                                <td class="text-xs-right" width="10%">
+                                    {{ props.item[1] }}
                                     (
-                                    <span style="color: green" v-if="vote[2].startsWith('+')">{{ vote[2] }}</span>
-                                    <span style="color: red" v-else-if="vote[2].startsWith('-')">{{ vote[2] }}</span>
-                                    <span v-else>{{ vote[2] }}</span>
+                                    <span style="color: green" v-if="props.item[2].startsWith('+')">{{ props.item[2] }}</span>
+                                    <span style="color: red" v-else-if="props.item[2].startsWith('-')">{{ props.item[2]
+                                        }}</span>
+                                    <span v-else>{{ props.item[2] }}</span>
                                     )
+
                                 </td>
-                                <td style="min-width:100px; width: 100%">
-                                    <v-progress-linear v-model="vote[3]" height="20" style="margin: 0px; overflow: visible;"></v-progress-linear>
+                                <td class="text-xs-right" width="75%">
+                                    <v-layout row align-space-around fill-height>
+                                        <div :style="{ width: props.item[3] + '%' , 'background-color': '#1976d2'}"></div>
+                                        <div :style="{ width: 100 - props.item[3] + '%',  'background-color': '#1976d2', opacity: '0.3'}"></div>
+                                    </v-layout>
                                 </td>
-                            </tr>
-                        </table>
+                            </template>
+                        </v-data-table>
                     </v-layout>
 
                 </v-container>
@@ -61,8 +63,8 @@
                     <v-btn v-if="chartLoaded === false" @click="loadHistory()">
                         Load Vote History (last 24h)
                     </v-btn>
-                    <line-chart v-if="chartLoaded" height="1000px" :data="chartData" :max="chartMax" :min="chartMin" :dataset="chartDataset"
-                        :library="chartLibrary" :colors="chartColors"></line-chart>
+                    <line-chart v-if="chartLoaded" height="1000px" :data="chartData" :max="chartMax" :min="chartMin"
+                        :dataset="chartDataset" :library="chartLibrary" :colors="chartColors"></line-chart>
 
                 </v-container>
             </v-content>
