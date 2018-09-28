@@ -36,9 +36,9 @@
                         <v-data-table :items="votes" hide-headers hide-actions>
                             <template slot="items" slot-scope="props">
                                 <td>{{ props.item.name }}</td>
-                                <td class="text-xs-right" width="5%">{{ props.index + 1 }}</td>
-                                <td class="text-xs-right" width="20%">{{ props.item[0] }}</td>
-                                <td class="text-xs-right" width="10%">
+                                <td class="text-xs-right" style="width: 2%" >{{ props.index + 1 }}</td>
+                                <td class="text-xs-right" style="width: 10%; min-width: 300px;">{{ props.item[0] }}</td>
+                                <td class="text-xs-right" style="width: 5%; min-width: 100px;">
                                     {{ props.item[1] }}
                                     (
                                     <span style="color: green" v-if="props.item[2].startsWith('+')">{{ props.item[2] }}</span>
@@ -48,7 +48,7 @@
                                     )
 
                                 </td>
-                                <td  width="75%">
+                                <td style="width: 100%">
                                     <v-layout row align-space-around fill-height>
                                         <div :style="{ width: props.item[3] + '%' , 'background-color': '#1976d2'}"></div>
                                         <div :style="{ width: 100 - props.item[3] + '%',  'background-color': '#1976d2', opacity: '0.3'}"></div>
@@ -166,6 +166,15 @@
             },
         })
     </script>
+
+    <style>
+        table.v-table tbody td,
+        table.v-table tbody th {
+            height: 25px;
+            padding-right: 10px !important;
+            padding-left: 0px !important;
+        }
+    </style>
 </body>
 
 </html>
