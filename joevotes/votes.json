@@ -1,12 +1,12 @@
 {
     "compare_date": "2018-09-27 19:15:19",
-    "last_update": "2018-09-28 06:33:16",
-    "nontop_voters": 66,
+    "last_update": "2018-09-28 06:38:17",
+    "nontop_voters": 64,
     "specials": {
         "LEON": 378
     },
     "top": 5,
-    "total_voters": 467,
+    "total_voters": 465,
     "votes": [
         [
             "Alien Isolation",
@@ -45,13 +45,13 @@
         ],
         [
             "Night in the Woods",
-            321,
-            "+22"
+            322,
+            "+23"
         ],
         [
             "Oxenfree",
-            279,
-            "+27"
+            280,
+            "+28"
         ],
         [
             "SCP \u2013 Containment Breach",
@@ -65,8 +65,8 @@
         ],
         [
             "Until Dawn",
-            550,
-            "+32"
+            551,
+            "+33"
         ],
         [
             "Yume Nikki",
