@@ -1,12 +1,12 @@
 {
     "compare_date": "2018-09-27 19:15:19",
-    "last_update": "2018-09-28 09:13:21",
-    "nontop_voters": 64,
+    "last_update": "2018-09-28 09:18:21",
+    "nontop_voters": 65,
     "specials": {
         "LEON": 378
     },
     "top": 5,
-    "total_voters": 466,
+    "total_voters": 467,
     "votes": [
         [
             "Alien Isolation",
@@ -35,8 +35,8 @@
         ],
         [
             "Luigi's Mansion",
-            399,
-            "+33"
+            400,
+            "+34"
         ],
         [
             "Metro 2033",
