@@ -1,12 +1,12 @@
 {
     "compare_date": "2018-09-27 19:15:19",
-    "last_update": "2018-09-28 01:28:11",
-    "nontop_voters": 67,
+    "last_update": "2018-09-28 01:33:11",
+    "nontop_voters": 66,
     "specials": {
         "LEON": 378
     },
     "top": 5,
-    "total_voters": 469,
+    "total_voters": 468,
     "votes": [
         [
             "Alien Isolation",
@@ -40,8 +40,8 @@
         ],
         [
             "Metro 2033",
-            319,
-            "+35"
+            320,
+            "+36"
         ],
         [
             "Night in the Woods",
