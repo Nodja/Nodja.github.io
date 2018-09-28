@@ -1,12 +1,12 @@
 {
     "compare_date": "2018-09-27 19:15:19",
-    "last_update": "2018-09-28 08:23:19",
-    "nontop_voters": 65,
+    "last_update": "2018-09-28 08:28:19",
+    "nontop_voters": 64,
     "specials": {
         "LEON": 378
     },
     "top": 5,
-    "total_voters": 467,
+    "total_voters": 466,
     "votes": [
         [
             "Alien Isolation",
@@ -35,8 +35,8 @@
         ],
         [
             "Luigi's Mansion",
-            400,
-            "+34"
+            399,
+            "+33"
         ],
         [
             "Metro 2033",
@@ -70,8 +70,8 @@
         ],
         [
             "Yume Nikki",
-            268,
-            "+20"
+            269,
+            "+21"
         ]
     ]
 }
