@@ -25,7 +25,7 @@
                             Last updated: {{ last_update }} EST <br>
                             Votes compared with votes from: {{ compare_date }} <br><br>
                             {{ total_voters }} people have voted. <br>
-                            {{ nontop_voters }} people have not voted in the top 5. <br><br>
+                            {{ nontop_voters }} people have not voted in the top {{ top }}. <br><br>
                             <template v-if="specials['LEON']">
                                 {{ specials['LEON'] }} out of 11037 people like to drive memes to the ground (LEON
                                 votes) <br>
@@ -98,6 +98,7 @@
                             this.compare_date = response.data['compare_date'];
                             this.votes.sort(comparator);
                             this.specials = response.data['specials'];
+                            this.top = response.data['top'];
                             var votes_max = Math.floor(this.votes[0][1]);
                             for (var vote of this.votes) {
                                 var percentage = vote[1] / votes_max * 100;
@@ -129,6 +130,7 @@
                 total_voters: 0,
                 nontop_voters: 0,
                 specials: {},
+                top: 0,
                 chartLoaded: false,
                 chartData: [],
                 chartDataset: { pointRadius: 0 },

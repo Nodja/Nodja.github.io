@@ -1,76 +1,77 @@
 {
     "compare_date": "2018-09-27 19:15:19",
-    "last_update": "2018-09-27 19:43:35",
-    "nontop_voters": 189,
+    "last_update": "2018-09-27 20:38:26",
+    "nontop_voters": 67,
     "specials": {
-        "LEON": 376
+        "LEON": 377
     },
+    "top": 5,
     "total_voters": 467,
     "votes": [
         [
             "Alien Isolation",
-            361,
-            "+3"
+            364,
+            "+6"
         ],
         [
             "Corpse Party",
-            341,
-            "+9"
+            347,
+            "+15"
         ],
         [
             "Dead Space 1",
-            337,
-            "+7"
-        ],
-        [
-            "Ghost Trick",
-            219,
-            "+9"
-        ],
-        [
-            "I Have No Mouth And I Must Scream",
-            430,
+            338,
             "+8"
         ],
         [
-            "Luigi's Mansion",
-            384,
-            "+18"
-        ],
-        [
-            "Metro 2033",
-            301,
-            "+17"
-        ],
-        [
-            "Night in the Woods",
-            309,
-            "+10"
-        ],
-        [
-            "Oxenfree",
-            266,
+            "Ghost Trick",
+            224,
             "+14"
         ],
         [
-            "SCP \u2013 Containment Breach",
-            255,
-            "+10"
+            "I Have No Mouth And I Must Scream",
+            435,
+            "+13"
         ],
         [
-            "Silent Hill 1 + 2",
-            512,
-            "+17"
+            "Luigi's Mansion",
+            387,
+            "+21"
         ],
         [
-            "Until Dawn",
-            536,
+            "Metro 2033",
+            308,
+            "+24"
+        ],
+        [
+            "Night in the Woods",
+            317,
             "+18"
         ],
         [
+            "Oxenfree",
+            270,
+            "+18"
+        ],
+        [
+            "SCP \u2013 Containment Breach",
+            257,
+            "+12"
+        ],
+        [
+            "Silent Hill 1 + 2",
+            519,
+            "+24"
+        ],
+        [
+            "Until Dawn",
+            538,
+            "+20"
+        ],
+        [
             "Yume Nikki",
-            263,
-            "+15"
+            265,
+            "+17"
         ]
     ]
 }

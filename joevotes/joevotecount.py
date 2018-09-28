@@ -47,14 +47,13 @@ async def update_votes(messages):
     olddata_date = olddata['last_update']
 
     votes = sorted(votes, key=lambda x: x[1], reverse=True)
-    top_x = votes[:5]
+    top = 5
 
-    topx_voters = []
+    top_voters = []
     for voter in voters:
-        for top in top_x:
-            # print(top, voters[voter])
-            if top[0] in voters[voter]:
-                topx_voters.append(voter)
+        for game in votes[top:]:
+            if game[0] in voters[voter]:
+                top_voters.append(voter)
                 break
 
     votes = sorted(votes, key=lambda x: x[0].lower())
@@ -64,9 +63,10 @@ async def update_votes(messages):
         "last_update": now.strftime("%Y-%m-%d %H:%M:%S"),
         "compare_date": olddata_date,
         "total_voters": len(voters),
-        "nontop_voters": len(voters) - len(topx_voters),
+        "nontop_voters": len(voters) - len(top_voters),
         "specials": specials,
-        "votes": votes
+        "votes": votes,
+        "top": top
     }
 
     with open(filepath, 'w') as f:
