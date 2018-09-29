@@ -72,7 +72,7 @@
 
                 <transition name="fade">
                     <div v-if="show_flashback" style="width: 100%; height: 100%; display:block; position:fixed; top: 0; bottom: 0; pointer-events:none;">
-                        <img src="flashback.png" width="100%">
+                        <img :src="show_flashback ? 'flashback.png' : ''" width="100%">
                     </div>
                 </transition>
             </v-content>
