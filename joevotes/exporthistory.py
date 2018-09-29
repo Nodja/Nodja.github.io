@@ -29,6 +29,10 @@ def export_history():
     vote_history = []
     c = 0
 
+
+    max_vote = None
+    min_vote = None
+
     for segment in data_segments:
         data_pos = segment['data_pos']
         data_length = segment['data_length']
@@ -45,6 +49,10 @@ def export_history():
                         history['data'][date] = vote[1]
                         if int(vote[1]) != history['last_vote']:
                             history['last_vote'] = int(vote[1])
+                        if max_vote is None or int(vote[1]) > max_vote:
+                            max_vote = int(vote[1])
+                        if min_vote is None or int(vote[1]) < min_vote:
+                            min_vote = int(vote[1])
                         found = True
                         break
                 if not found:
@@ -53,15 +61,6 @@ def export_history():
                         "data": {date: vote[1]},
                         "last_vote": int(vote[1])
                     })
-
-    max_vote = 0
-    min_vote = -1
-    for history in vote_history:
-        if history['last_vote'] > max_vote:
-            max_vote = history['last_vote']
-        if history['last_vote'] < min_vote or min_vote == -1:
-            min_vote = history['last_vote']
-    min_vote = min_vote - 10
 
     vote_history = sorted(vote_history, key=lambda x: x['last_vote'], reverse=True)
     with open("joevotes\\vote_history.json", "w") as f:
