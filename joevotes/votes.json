@@ -1,9 +1,9 @@
 {
     "compare_date": "2018-09-27 19:15:19",
-    "last_update": "2018-09-29 10:33:27",
+    "last_update": "2018-09-29 10:38:28",
     "nontop_voters": 66,
     "specials": {
-        "LEON": 382
+        "LEON": 383
     },
     "top": 5,
     "total_voters": 466,
@@ -35,8 +35,8 @@
         ],
         [
             "Luigi's Mansion",
-            404,
-            "+38"
+            405,
+            "+39"
         ],
         [
             "Metro 2033",
@@ -55,8 +55,8 @@
         ],
         [
             "SCP \u2013 Containment Breach",
-            262,
-            "+17"
+            263,
+            "+18"
         ],
         [
             "Silent Hill 1 + 2",
@@ -70,8 +70,8 @@
         ],
         [
             "Yume Nikki",
-            269,
-            "+21"
+            270,
+            "+22"
         ]
     ]
 }
