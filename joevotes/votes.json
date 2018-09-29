@@ -1,12 +1,12 @@
 {
     "compare_date": "2018-09-27 19:15:19",
-    "last_update": "2018-09-29 12:30:38",
+    "last_update": "2018-09-29 12:35:34",
     "nontop_voters": 66,
     "specials": {
         "LEON": 383
     },
     "top": 5,
-    "total_voters": 466,
+    "total_voters": 467,
     "votes": [
         [
             "Alien Isolation",
@@ -30,8 +30,8 @@
         ],
         [
             "I Have No Mouth And I Must Scream",
-            443,
-            "+21"
+            442,
+            "+20"
         ],
         [
             "Luigi's Mansion",
@@ -55,23 +55,23 @@
         ],
         [
             "SCP \u2013 Containment Breach",
-            263,
-            "+18"
+            262,
+            "+17"
         ],
         [
             "Silent Hill 1 + 2",
-            547,
-            "+52"
+            546,
+            "+51"
         ],
         [
             "Until Dawn",
-            561,
-            "+43"
+            560,
+            "+42"
         ],
         [
             "Yume Nikki",
-            270,
-            "+22"
+            269,
+            "+21"
         ]
     ]
 }
