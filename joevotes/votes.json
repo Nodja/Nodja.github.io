@@ -1,6 +1,5 @@
 {
-    "compare_date": "2018-09-27 19:15:19",
-    "last_update": "2018-09-30 00:00:09",
+    "last_update": "2018-10-01 17:52:43",
     "nontop_voters": 65,
     "specials": {
         "LEON": 383
@@ -8,70 +7,83 @@
     "top": 5,
     "total_voters": 468,
     "votes": [
-        [
-            "Alien Isolation",
-            392,
-            "+34"
-        ],
-        [
-            "Corpse Party",
-            373,
-            "+41"
-        ],
-        [
-            "Dead Space 1",
-            359,
-            "+29"
-        ],
-        [
-            "Ghost Trick",
-            233,
-            "+23"
-        ],
-        [
-            "I Have No Mouth And I Must Scream",
-            447,
-            "+25"
-        ],
-        [
-            "Luigi's Mansion",
-            407,
-            "+41"
-        ],
-        [
-            "Metro 2033",
-            341,
-            "+57"
-        ],
-        [
-            "Night in the Woods",
-            329,
-            "+30"
-        ],
-        [
-            "Oxenfree",
-            289,
-            "+37"
-        ],
-        [
-            "SCP \u2013 Containment Breach",
-            262,
-            "+17"
-        ],
-        [
-            "Silent Hill 1 + 2",
-            549,
-            "+54"
-        ],
-        [
-            "Until Dawn",
-            566,
-            "+48"
-        ],
-        [
-            "Yume Nikki",
-            271,
-            "+23"
-        ]
+        {
+            "game": "Alien Isolation",
+            "votes": 393,
+            "votes_round1": 383,
+            "votes_round2": 383
+        },
+        {
+            "game": "Corpse Party",
+            "votes": 374,
+            "votes_round1": 364,
+            "votes_round2": 364
+        },
+        {
+            "game": "Dead Space 1",
+            "votes": 360,
+            "votes_round1": 350,
+            "votes_round2": 350
+        },
+        {
+            "game": "Ghost Trick",
+            "votes": 234,
+            "votes_round1": 224,
+            "votes_round2": 224
+        },
+        {
+            "game": "I Have No Mouth And I Must Scream",
+            "votes": 450,
+            "votes_round1": 440,
+            "votes_round2": 440
+        },
+        {
+            "game": "Luigi's Mansion",
+            "votes": 408,
+            "votes_round1": 398,
+            "votes_round2": 398
+        },
+        {
+            "game": "Metro 2033",
+            "votes": 343,
+            "votes_round1": 333,
+            "votes_round2": 333
+        },
+        {
+            "game": "Night in the Woods",
+            "votes": 330,
+            "votes_round1": 320,
+            "votes_round2": 320
+        },
+        {
+            "game": "Oxenfree",
+            "votes": 290,
+            "votes_round1": 280,
+            "votes_round2": 280
+        },
+        {
+            "game": "SCP \u2013 Containment Breach",
+            "votes": 263,
+            "votes_round1": 253,
+            "votes_round2": 253
+        },
+        {
+            "game": "Silent Hill 1 + 2",
+            "votes": 551,
+            "votes_round1": 541,
+            "votes_round2": 541
+        },
+        {
+            "game": "Until Dawn",
+            "votes": 569,
+            "votes_round1": 559,
+            "votes_round2": 559
+        },
+        {
+            "game": "Yume Nikki",
+            "votes": 272,
+            "votes_round1": 262,
+            "votes_round2": 262
+        }
     ]
 }
