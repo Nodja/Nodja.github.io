@@ -1,6 +1,6 @@
+set DISCORD_TOKEN=stuff
 :start
-set DISCORD_TOKEN=mfa.etcetc
 start "" hideexec32.exe python joevotecount.py
 SLEEP 300
-taskkill /f /im python.exe
+taskkill /f /t /im hideexec32.exe
 goto start

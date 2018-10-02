@@ -5,10 +5,9 @@ import json
 from dateutil.parser import parse as dateutil_parse
 import datetime
 
-def export_history():
-    os.system('git fast-export HEAD -- joevotes\\votes.json > joevotes\\vote_data')
-    data = open('joevotes\\vote_data', 'rb').read()
-
+def export_history(dir="joevotes"):
+    os.system(f'git fast-export HEAD -- {dir}\\votes.json > {dir}\\vote_data')
+    data = open(f'{dir}\\vote_data', 'rb').read()
     data_segments = []
     cur_pos = 0
     while True:
@@ -42,28 +41,31 @@ def export_history():
             date = vote_data['last_update'] + ' EST'
             if dateutil_parse(date) < datetime.datetime.now() - datetime.timedelta(days=1) :
                 continue
-            for vote in vote_data['votes']:
+            for game in vote_data['votes']:
                 found = False
                 for history in vote_history:
-                    if vote[0] == history['name']:
-                        history['data'][date] = vote[1]
-                        if int(vote[1]) != history['last_vote']:
-                            history['last_vote'] = int(vote[1])
-                        if max_vote is None or int(vote[1]) > max_vote:
-                            max_vote = int(vote[1])
-                        if min_vote is None or int(vote[1]) < min_vote:
-                            min_vote = int(vote[1])
+                    if game['game'] == history['game']:
+                        history['data'][date] = game['votes']
+                        if int(game['votes']) != history['last_vote']:
+                            history['last_vote'] = int(game['votes'])
+                        if max_vote is None or int(game['votes']) > max_vote:
+                            max_vote = int(game['votes'])
+                        if min_vote is None or int(game['votes']) < min_vote:
+                            min_vote = int(game['votes'])
                         found = True
                         break
                 if not found:
                     vote_history.append({
-                        "name": vote[0],
-                        "data": {date: vote[1]},
-                        "last_vote": int(vote[1])
+                        "game": game['game'],
+                        "data": {date: game['votes']},
+                        "last_vote": int(game['votes'])
                     })
 
     vote_history = sorted(vote_history, key=lambda x: x['last_vote'], reverse=True)
-    with open("joevotes\\vote_history.json", "w") as f:
+    with open(f"{dir}\\vote_history.json", "w") as f:
         f.write(json.dumps(
             {"max_vote": max_vote, "min_vote": min_vote, "history": vote_history}, indent=4, sort_keys=True))
         f.truncate()
+
+if __name__ == "__main__":
+    export_history(".")

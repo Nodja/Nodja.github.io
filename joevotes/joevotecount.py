@@ -3,6 +3,8 @@ import datetime
 import json
 import os
 import asyncio
+import re
+import glob
 
 from exporthistory import export_history
 # I know the following code is not super pretty, but it works :D
@@ -11,7 +13,7 @@ from exporthistory import export_history
 async def update_votes(messages):
     votes = []  # list of lists [gamename, nr_votes]
     # key will be voter id (user#1234), value will be list of games voted on
-    voters = {}
+    voter_games = {}
 
     specials_list = ["LEON", "god damn weebs", "Your Mom"]
     specials = {}
@@ -24,46 +26,43 @@ async def update_votes(messages):
                 if message.content in specials_list:
                     specials[message.content] = reaction.count
                     continue
-                votes.append([message.content, reaction.count])
+                votes.append({"game": message.content,
+                              "votes": reaction.count,
+                              "votes_rounds": []})
                 reactors = await reaction.users().flatten()
                 for reactor in reactors:
-                    if str(reactor) not in voters:
-                        voters[str(reactor)] = [message.content, ]
+                    if str(reactor) not in voter_games:
+                        voter_games[str(reactor)] = [message.content, ]
                     else:
-                        voters[str(reactor)].append(message.content)
+                        voter_games[str(reactor)].append(message.content)
 
-    olddata = json.load(open('oldvotes.json', 'r'))
-    oldvotes = olddata['votes']
-    for vote in votes:
-        for oldvote in oldvotes:
-            if oldvote[0] == vote[0]:
-                diff = vote[1] - oldvote[1]
-                if diff > 0:
-                    diff = f"+{diff}"
-                else:
-                    diff = f"{diff}"
-                vote.append(diff)
+    for file in glob.glob("votes_round*.json"):
+        match = re.match(r"(votes_round\d+).json", file)
+        if match:
+            olddata = json.load(open(file, 'r'))
+            oldvotes = olddata['votes']
+            for vote in votes:
+                for oldvote in oldvotes:
+                    if oldvote['game'] == vote['game']:
+                        vote["votes_rounds"].append(oldvote['votes'])
 
-    olddata_date = olddata['last_update']
-
-    votes = sorted(votes, key=lambda x: x[1], reverse=True)
+    votes = sorted(votes, key=lambda x: x['votes'], reverse=True)
     top = 5
 
     top_voters = []
-    for voter in voters:
-        for game in votes[top:]:
-            if game[0] in voters[voter]:
+    for voter in voter_games:
+        for vote in votes[top:]:
+            if vote['game'] in voter_games[voter]:
                 top_voters.append(voter)
                 break
 
-    votes = sorted(votes, key=lambda x: x[0].lower())
-    filepath = r"C:\Users\Nodja\Desktop\proj\Nodja.github.io\joevotes\votes.json"
+    votes = sorted(votes, key=lambda x: x['game'].lower())
+    filepath = r"votes.json"
     now = datetime.datetime.now()
     vote_data = {
         "last_update": now.strftime("%Y-%m-%d %H:%M:%S"),
-        "compare_date": olddata_date,
-        "total_voters": len(voters),
-        "nontop_voters": len(voters) - len(top_voters),
+        "total_voters": len(voter_games),
+        "nontop_voters": len(voter_games) - len(top_voters),
         "specials": specials,
         "votes": votes,
         "top": top
@@ -77,14 +76,14 @@ async def update_votes(messages):
     repo_dir = r"C:\Users\Nodja\Desktop\proj\Nodja.github.io"
     os.chdir(repo_dir)
 
-    os.system("git add joevotes\\votes.json")
-    os.system("git commit -m \"Update votes (automated)\"")
+    # os.system("git add joevotes\\votes.json")
+    # os.system("git commit -m \"Update votes (automated)\"")
 
     export_history()
-    os.system("git add joevotes\\vote_history.json")
-    os.system("git commit -m \"Update vote history (automated)\"")
+    # os.system("git add joevotes\\vote_history.json")
+    # os.system("git commit -m \"Update vote history (automated)\"")
 
-    os.system("git push origin")
+    # os.system("git push origin")
 
 
 async def fetch_votes():

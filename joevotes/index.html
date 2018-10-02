@@ -5,6 +5,12 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+    <script src="https://unpkg.com/chart.js@2.7.2/dist/Chart.bundle.js"></script>
+    <script src="https://unpkg.com/vue-chartkick@0.5.0"></script>
 </head>
 
 <body>
@@ -21,9 +27,8 @@
                             halloween voter role) and go on the #halloween-voting-event
                             channel on <a href="https://discordapp.com/invite/8gSBsYC">the discord server</a>.
                             <br><br>
-
+                            </vote-diff>
                             Last updated: {{ last_update }} EST <br>
-                            Votes compared with votes from: {{ compare_date }} <br><br>
                             {{ total_voters }} people have voted. <br>
                             {{ nontop_voters }} people have not voted in the top {{ top }}. <br><br>
                             <template v-if="specials['LEON']">
@@ -35,25 +40,37 @@
                     <v-layout child-flex>
                         <v-data-table :items="votes" hide-headers hide-actions>
                             <template slot="items" slot-scope="props">
-                                <td>{{ props.item.name }}</td>
                                 <td class="text-xs-right" style="width: 2%">{{ props.index + 1 }}</td>
-                                <td class="text-xs-right" style="width: 10%; min-width: 300px;">{{ props.item[0] }}</td>
+                                <td class="text-xs-right" style="width: 10%; min-width: 300px;">{{ props.item['game'] }}</td>
                                 <td class="text-xs-right" style="width: 5%; min-width: 100px;">
-                                    {{ props.item[1] }}
-                                    (
-                                    <span style="color: green" v-if="props.item[2].startsWith('+')">{{
-                                        props.item[2] }}</span>
-                                    <span style="color: red" v-else-if="props.item[2].startsWith('-')">{{
-                                        props.item[2]
-                                        }}</span>
-                                    <span v-else>{{ props.item[2] }}</span>
-                                    )
+                                    <v-tooltip right>
+                                        <span slot="activator">
+                                            {{ props.item['votes'] }}
+                                            <span v-if="props.item.votes_rounds.length !== 0">(<vote-diff :diff="props.item['votes'] - props.item.votes_rounds[0]"></vote-diff>)</span>
+                                        </span>
+                                        <table class="tooltip-table">
+                                            <tr>
+                                                <td v-for="(vote, index) in props.item.votes_rounds">Round {{ index + 1 }}</td>
+                                                <td>Current Round</td>
+                                            </tr>
+                                            <tr>
+                                                <td v-for="(vote, index) in props.item.votes_rounds">
+                                                    {{ vote }}
+                                                    <span v-if="index !== 0">(<vote-diff :diff="vote - props.item.votes_rounds[index - 1] "></vote-diff>)</span>
+                                                </td>
+                                                <td>
+                                                    {{ props.item['votes'] }}
+                                                    <span v-if="props.item.votes_rounds.length !== 0">(<vote-diff :diff="props.item['votes'] - props.item.votes_rounds[props.item.votes_rounds.length - 1] "></vote-diff>)</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </v-tooltip>
 
                                 </td>
                                 <td style="width: 100%; min-width: 100px;">
                                     <v-layout row align-space-around fill-height>
-                                        <div :style="{ width: props.item[3] + '%' , 'background-color': '#1976d2'}"></div>
-                                        <div :style="{ width: 100 - props.item[3] + '%',  'background-color': '#1976d2', opacity: '0.3'}"></div>
+                                        <div :style="{ width: props.item['percentage'] + '%' , 'background-color': '#1976d2'}"></div>
+                                        <div :style="{ width: 100 - props.item['percentage'] + '%',  'background-color': '#1976d2', opacity: '0.3'}"></div>
                                     </v-layout>
                                 </td>
                             </template>
@@ -65,8 +82,8 @@
                     <v-btn v-if="chartLoaded === false" @click="loadHistory()">
                         Load Vote History (last 24h)
                     </v-btn>
-                    <line-chart v-if="chartLoaded" height="1000px" :data="chartData" :max="chartMax" :min="chartMin"
-                        :dataset="chartDataset" :library="chartLibrary" :colors="chartColors"></line-chart>
+                    <line-chart v-if="chartLoaded" height="1000px" :data="chartData" :max="chartMax" :min="chartMin" :dataset="chartDataset" :library="chartLibrary"
+                        :colors="chartColors"></line-chart>
 
                 </v-container>
 
@@ -76,24 +93,39 @@
                     </div>
                 </transition>
             </v-content>
+
+            <span id="votediff">
+                <span style="color: greenyellow" v-if="diff > 0">
+                    +{{ diff }}
+                </span>
+                <span style="color: red" v-else-if="diff < 0">
+                    -{{ diff }}
+                </span>
+                <span v-else>
+                    {{ 0 }}
+                </span>
+            </span>
         </v-app>
+
+
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
-    <script src="https://unpkg.com/chart.js@2.7.2/dist/Chart.bundle.js"></script>
-    <script src="https://unpkg.com/vue-chartkick@0.5.0"></script>
+
 
 
 
     <script>
         function comparator(a, b) {
-            if (a[1] < b[1]) return 1;
-            if (a[1] > b[1]) return -1;
+            if (a['votes'] < b['votes']) return 1;
+            if (a['votes'] > b['votes']) return -1;
             return 0;
         }
 
+        Vue.component('vote-diff', {
+            template: '#votediff',
+            props: ['diff']
+
+        });
 
         new Vue({
             el: '#app',
@@ -105,14 +137,12 @@
                             this.last_update = response.data['last_update'];
                             this.total_voters = response.data['total_voters'];
                             this.nontop_voters = response.data['nontop_voters'];
-                            this.compare_date = response.data['compare_date'];
                             this.votes.sort(comparator);
                             this.specials = response.data['specials'];
                             this.top = response.data['top'];
-                            var votes_max = Math.floor(this.votes[0][1]);
+                            var votes_max = Math.floor(this.votes[0]['votes']);
                             for (var vote of this.votes) {
-                                var percentage = vote[1] / votes_max * 100;
-                                vote.push(percentage);
+                                vote['percentage'] = vote['votes'] / votes_max * 100;
                             }
 
                         })
@@ -189,11 +219,29 @@
                     '#e6194b', '#3cb44b', '#ffe119', '#4363d8', '#f58231', '#911eb4', '#46f0f0', '#f032e6', '#bcf60c', '#fabebe', '#008080', '#e6beff', '#9a6324', '#fffac8', '#800000', '#aaffc3', '#808000', '#ffd8b1', '#000075', '#808080', '#ffffff'],
                 chartMax: 0,
                 chartMin: 0,
-            },
+            }
         })
     </script>
 
     <style>
+        table.tooltip-table {
+            border-collapse: collapse;
+            border: 1px solid white;
+        }
+
+        table.tooltip-table td,
+        table.tooltip-table tr {
+            border: 1px solid white;
+            text-align: center;
+        }
+
+        table.tooltip-table td {
+            padding: 3px;
+        }
+
+
+
+
         table.v-table tbody td,
         table.v-table tbody th {
             height: 25px;
