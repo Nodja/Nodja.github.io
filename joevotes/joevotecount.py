@@ -11,8 +11,7 @@ from exporthistory import export_history
 
 
 async def update_votes(messages):
-    votes = []  # list of lists [gamename, nr_votes]
-    # key will be voter id (user#1234), value will be list of games voted on
+    votes = []
     voter_games = {}
 
     specials_list = ["LEON", "god damn weebs", "Your Mom"]
